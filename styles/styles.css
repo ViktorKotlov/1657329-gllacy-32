@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Inter";
+  font-style: regular;
+  font-weight: 400;
+  src: url("fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: regular;
+  font-weight: 700;
+  src: url("fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: regular;
+  font-weight: 900;
+  src: url("fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* .visually-hidden {
+  display: none;
+} */
+
+/* Pages */
+
+.navigation-link {
+  text-align: center;
+}
+
+.site-navigation {
+  line-height: 20px;
+}
+
+.phone {
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.user-navigation {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.user-navigation .navigation-link {
+  background-color: #FEC7D5;
+}
+
+.gallery-product-title {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.button {
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #FCFCFC;
+  color: inherit;
+}
+
+.social-item .button, .presents-item .button, .navigation-link, .phone, .footer-info a {
+  color: inherit;
+  text-decoration: none;
+}
+.presents-item-title {text-align: start;}
+.presents-item {
+  background-color: #FF7799;
+}
+
+.presents-item-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.assortment-item b, .adress-content-adress, .adress-content-phone {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.assortment-item {
+  background-color: #FCFCFC;
+}
+.assortment-item p {
+  text-align: center;
+}
+
+.news {
+  background-image: url("../images/fon/Blog.jpg");
+  background-repeat: no-repeat;
+}
+
+.news-text {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.mailing-button, .delivery-content-form .button, .adress-content .button {
+  background-color: #FF2F63;
+  color: #FCFCFC;
+}
+
+.delivery-content-form label {
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.adress-content p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+
+.footer-info a {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-info .footer-info-suppliers {
+  font-weight: 700;
+}
+
+.copyright a {
+  color: inherit;
+}
+
+.copyright p {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* Catalog */
+
+.navigation-link-current {
+  color: #FCFCFC;
+  background-color: #FF4A78;
+}
+
+.bredcrambs-link {color: inherit;}
+.catalog-filter-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.catalog-form-group {
+  font-size: 14px;
+  line-height: 20px;
+  background-color:
+  #FEC7D5;
+}
+.catalog-form .button {
+  font-weight: 700;
+}
+
+
+
+data
