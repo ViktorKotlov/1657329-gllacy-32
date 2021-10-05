@@ -72,7 +72,7 @@ h3 {
   background-color: #FEC7D5;
 }
 
-.gallery-product-title {
+.promo-title {
   font-size: 36px;
   line-height: 46px;
   font-weight: 900;
@@ -101,7 +101,7 @@ h3 {
   font-weight: 700;
 }
 
-.assortment-item b, .adress-content-adress, .adress-content-phone {
+.assortment-item b, .contacts-content-adres, .contacts-content-phone {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -124,17 +124,17 @@ h3 {
   font-weight: 700;
 }
 
-.mailing-button, .delivery-content-form .button, .adress-content .button {
+.mailing-button, .form-delivery .button, .contacts-content .button {
   background-color: #FF2F63;
   color: #FCFCFC;
 }
 
-.delivery-content-form label {
+.form-delivery label {
   line-height: 20px;
   font-weight: 700;
 }
 
-.adress-content p {
+.contacts-content p {
   font-size: 14px;
   line-height: 20px;
 }
