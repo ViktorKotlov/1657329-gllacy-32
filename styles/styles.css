@@ -86,11 +86,15 @@ h3 {
   color: inherit;
 }
 
-.social-item .button, .presents-item .button, .navigation-link, .phone, .footer-info a {
+.navigation-link, .phone, .footer-info a, .button, .contacts-content-phone {
   color: inherit;
   text-decoration: none;
 }
-.presents-item-title {text-align: start;}
+
+.presents-item-title {
+  text-align: start;
+}
+
 .presents-item {
   background-color: #FF7799;
 }
@@ -106,15 +110,36 @@ h3 {
   line-height: 24px;
   font-weight: 700;
 }
+
 .assortment-item {
   background-color: #FCFCFC;
 }
+
 .assortment-item p {
+  text-align: center;
+}
+
+.description {
+  background-image: url("../images/fon/fon-description.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 24px;
+}
+
+.description-wrap {
+  background-color: #FCFCFC;
+}
+
+.description-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
   text-align: center;
 }
 
 .news {
   background-image: url("../images/fon/Blog.jpg");
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
@@ -129,17 +154,27 @@ h3 {
   color: #FCFCFC;
 }
 
+.delivery {
+  background-image: url(..//images/fon/Dost.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
 .form-delivery label {
   line-height: 20px;
   font-weight: 700;
+}
+
+.contacts {
+  background-image: url(..//images/fon/Obr-sv.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .contacts-content p {
   font-size: 14px;
   line-height: 20px;
 }
-
-
 
 .footer-info a {
   font-size: 14px;
@@ -166,7 +201,10 @@ h3 {
   background-color: #FF4A78;
 }
 
-.bredcrambs-link {color: inherit;}
+.bredcrambs-link {
+  color: inherit;
+}
+
 .catalog-filter-title {
   font-size: 32px;
   line-height: 46px;
@@ -176,13 +214,15 @@ h3 {
 .catalog-form-group {
   font-size: 14px;
   line-height: 20px;
-  background-color:
-  #FEC7D5;
+  background-color: #FEC7D5;
 }
+
 .catalog-form .button {
   font-weight: 700;
 }
-
-
-
+.pagination-link {
+  color: inherit;
+ text-decoration: none;
+ line-height: 20px;
+}
 data

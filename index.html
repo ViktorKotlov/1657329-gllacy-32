@@ -61,7 +61,7 @@
       <p>Натуральное мороженое из свежих сливок
         и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
       </p>
-      <a class="promo-button" href="#">
+      <a class="button" href="#">
         <span class="promo-button-text">Заказать</span>
       </a>
       <ol class="promo-pagination">
@@ -147,7 +147,7 @@
           <p>Сливочное мороженое с малиновым джемом</p>
           <b>310 ₽/кг</b>
           <button class="assortment-button" type="button">
-            <img src="#" alt="значек корзины">
+            <img src="images/vector/basket-prod.svg" width="16" height="16" alt="значек корзины">
           </button>
         </li>
         <li class="assortment-item">
@@ -186,32 +186,35 @@
     </section>
     <section class="description">
       <h2 class="visually-hidden">Преимущества магазина</h2>
-      <span class="description-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
-        проиводства на развес</span>
-      <ul class="description-item">
-        <li class="description-list">
-          <img class="description-image" src="images/vector/ice-cream.svg" width="48" height="48"
-            alt="значек мороженного">
-          <p>Все наше мороженое изгатавливается на собственном производстве, с использованием современного оборудования
-            и проверенных временем технологий.</p>
-        </li>
-        <li class="description-list">
-          <img class="description-image" src="images/vector/leaflet.svg" width="48" height="48" alt="значек листика">
-          <p>Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты
-            и добавки произведены из натурального сырья.</p>
-        </li>
-        <li class="description-list">
-          <img class="description-image" src="images/vector/cow.svg" width="48" height="48" alt="значек коровы">
-          <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает
-            долговременное сотрудничество.</p>
-        </li>
-        <li class="description-list">
-          <img class="description-image" src="images/vector/thermometer.svg" width="48" height="48"
-            alt="значек термометра">
-          <p>Доставка нашего мороженого осуществляется в специальном термопаке, который не дает мороженому растаять и
-            позволяет сохранить превосходный вкус.</p>
-        </li>
-      </ul>
+      <div class="description-wrap">
+        <span class="description-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
+          проиводства на развес</span>
+        <ul class="description-item">
+          <li class="description-list">
+            <img class="description-image" src="images/vector/ice-cream.svg" width="48" height="48"
+              alt="значек мороженного">
+            <p>Все наше мороженое изгатавливается на собственном производстве, с использованием современного
+              оборудования
+              и проверенных временем технологий.</p>
+          </li>
+          <li class="description-list">
+            <img class="description-image" src="images/vector/leaflet.svg" width="48" height="48" alt="значек листика">
+            <p>Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты
+              и добавки произведены из натурального сырья.</p>
+          </li>
+          <li class="description-list">
+            <img class="description-image" src="images/vector/cow.svg" width="48" height="48" alt="значек коровы">
+            <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает
+              долговременное сотрудничество.</p>
+          </li>
+          <li class="description-list">
+            <img class="description-image" src="images/vector/thermometer.svg" width="48" height="48"
+              alt="значек термометра">
+            <p>Доставка нашего мороженого осуществляется в специальном термопаке, который не дает мороженому растаять и
+              позволяет сохранить превосходный вкус.</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <div class="news-mailing">
       <article class="news">
@@ -271,14 +274,13 @@
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Адрес</h2>
-      <img class="contacts-image" src="#" alt="мороженное в рожках">
       <div class="contacts-content">
         <p class="contacts-content-text">Адрес главного офиса и офлайн-магазина: </p>
         <span class="contacts-content-adres">наб. Реки Карповки, 5 лит П, Санкт-Петербург</span>
         <p>Для заказов по телефону:</p>
-        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="contacts-content-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <p>(с 10 до 20 ежедневно)</p>
-        <button class="button" type="submit">Форма обратной связи</button>
+        <a class="button" href="#">Форма обратной связи</a>
       </div>
     </section>
   </main>
@@ -306,7 +308,7 @@
     <section class="footer-info">
       <h3 class="visually-hidden">Информация</h3>
       <p class="footer-info-suppliers">
-        <a class="" href="#">Для поставщиков</a>
+        <a href="#">Для поставщиков</a>
       </p>
       <p class="footer-info-document">
         <a href="#">Наши документы</a>
