@@ -54,16 +54,6 @@
     <h1 class="visually-hidden">Магазин мороженного Глэйси</h1>
     <section class="promo">
       <h2 class="visually-hidden">Галерея товаров</h2>
-      <span class="promo-title">
-        Нежный пломбир <br>
-        с клубничным джемом
-      </span>
-      <p>Натуральное мороженое из свежих сливок
-        и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
-      </p>
-      <a class="button" href="#">
-        <span class="promo-button-text">Заказать</span>
-      </a>
       <ol class="promo-pagination">
         <li class="promo-pagination-item">
           <button class="promo-pagination-button promo-pagination-button-current" type="button">
@@ -91,12 +81,23 @@
           <span class="visyally-hidden">Следующее фото</span>
         </button>
       </div>
-      <div class="block-promo">
-        <img class="promo-image" src="images/ice-cream-banana.png" width="66" height="150" alt="Сливочное мороженое">
-      </div>
-      <div class="block-promo">
-        <img class="promo-image" src="images/ice-cream-marshmallows.png" width="66" height="150"
-          alt="Карамельный пломбир">
+      <div class="promo-slider">
+        <div class="text-content">
+          <span class="promo-title">
+            Нежный пломбир <br>
+            с клубничным джемом
+          </span>
+          <p>Натуральное мороженое из свежих сливок
+            и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.
+          </p>
+        </div>
+        <div class="image-content">
+          <img class="promo-image" src="images/banana.png" width="66" height="150" alt="Сливочное мороженое">
+          <img class="promo-image" src="images/marshmallows.png" width="66" height="150" alt="Карамельный пломбир">
+        </div>
+        <a class="button" href="#">
+          <span class="promo-button-text">Заказать</span>
+        </a>
       </div>
       <ul class="social-list">
         <li class="social-item">
@@ -123,14 +124,14 @@
           <h3 class="presents-item-title">Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a class="button" href="#"><span>Хочу подарок</span></a>
-          <img class="presents-image-raspberry" src="images/fon/Malin.png" width="181" height="284"
+          <img class="presents-image-raspberry" src="images/background/malin.png" width="181" height="284"
             alt="Малинка в рожке">
         </li>
         <li class="presents-item">
           <h3 class="presents-item-title">Маршмеллоу даром!</h3>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
           <a class="button" href="#"><span>Хочу подарок</span></a>
-          <img class="presents-image-marshmallows" src="images/fon/Zefir.png" width="232" height="359"
+          <img class="presents-image-marshmallows" src="images/background/zefir.png" width="232" height="359"
             alt="Маршмелоу в рожке">
         </li>
       </ul>
@@ -141,7 +142,7 @@
         <li class="assortment-item">
 
           <img class="assortment-image" src="images/catalog/raspberries.png" width="168" height="168"
-            alt="Мороженное малинка">
+            alt="Шарик мороженного">
           <h3 class="assortment-title">Малинка</h3>
 
           <p>Сливочное мороженое с малиновым джемом</p>
@@ -153,7 +154,7 @@
         <li class="assortment-item">
 
           <img class="assortment-image" src="images/catalog/pistachio.png" width="168" height="168"
-            alt="Мороженное фисташка">
+            alt="Шарик мороженного">
           <h3 class="assortment-title">Фисташка</h3>
 
           <p>Фисташковый пломбир с кусочками шоколада</p>
@@ -164,7 +165,7 @@
         </li>
         <li class="assortment-item">
           <img class="assortment-image" src="images/catalog/blueberry.png" width="168" height="168"
-            alt="Мороженное черника">
+            alt="Шарик мороженного">
           <h3 class="assortment-title">Черника</h3>
           <p>Крем-брюле с черничным джемом</p>
           <b>330 ₽/кг</b>
@@ -174,7 +175,7 @@
         </li>
         <li class="assortment-item">
           <img class="assortment-image" src="images/catalog/bubble-gum.png" width="168" height="168"
-            alt="Мороженное бабл-гам">
+            alt="Шарик мороженного">
           <h3 class="assortment-title">Бабл-гам</h3>
           <p>Ванильный пломбир со сладкой посыпкой</p>
           <b>320 ₽/кг</b>
@@ -187,8 +188,8 @@
     <section class="description">
       <h2 class="visually-hidden">Преимущества магазина</h2>
       <div class="description-wrap">
-        <span class="description-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
-          проиводства на развес</span>
+        <p class="description-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
+          проиводства на развес</p>
         <ul class="description-item">
           <li class="description-list">
             <img class="description-image" src="images/vector/ice-cream.svg" width="48" height="48"
@@ -238,15 +239,14 @@
       </section>
     </div>
     <section class="delivery">
-      <img class="delivery-image" src="#" alt="Мороженное на столе">
-      <h2>Доставка любимого мороженого на дом</h2>
+      <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
       <p>Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом
         и курьер привезет вам ваш заказ в течение часа!</p>
     </section>
     <section class="delivery-content">
       <h2 class="visually-hidden">Форма доставки</h2>
       <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-      <form class="form-delivery" action="http://echo.htmlacademy.ru/" method="POST">
+      <form class="form-delivery" action="https://echo.htmlacademy.ru/" method="POST">
         <p class="form-delivery-date">
           <span class="form-label form-label-icon">
             <label for="form-label-date">Дата</label>
@@ -260,14 +260,14 @@
           <label for="form-label-phone">Телефон</label>
           <input type="text" id="form-label-phone" name="phone" placeholder="+7 800 999-00-00">
         </p>
-        <p class="form-delivery-adres">
+        <p class="form-delivery-adress">
           <span class="form-label form-label-icon">
             <label for="form-label-adres">Адрес</label>
             <button class="info" type="button">
               <span class="visually-hidden">Посмотреть дополнительную информацию</span>
             </button>
           </span>
-          <input type="text" id="orm-label-adres" name="adres" placeholder="ул. Большая Конюшенная, 19/8">
+          <input type="text" id="form-label-adres" name="adres" placeholder="ул. Большая Конюшенная, 19/8">
         </p>
         <a class="link-form button" href="#"><span>Отправить</span></a>
       </form>

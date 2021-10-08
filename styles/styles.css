@@ -1,54 +1,44 @@
-@font-face {
-  font-family: "Inter";
-  font-style: regular;
-  font-weight: 400;
-  src: url("fonts/inter-400.woff2") format("woff2");
-  font-display: swap;
-}
+/* ---FONTS--- */
 
 @font-face {
   font-family: "Inter";
-  font-style: regular;
+  font-style: normal;
   font-weight: 700;
-  src: url("fonts/inter-700.woff2") format("woff2");
+  src: url("../fonts/inter-700.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Inter";
-  font-style: regular;
+  font-style: normal;
   font-weight: 900;
-  src: url("fonts/inter-900.woff2") format("woff2");
+  src: url("../fonts/inter-900.woff2") format("woff2");
   font-display: swap;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #2D3440;
   background-color: #FEAFC3;
 }
 
-h2 {
+.delivery-title, .presents-title, .assortment-title {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
   text-align: center;
 }
 
-h3 {
+.presents-item-title, .assortment-title {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
 }
 
-/* .visually-hidden {
-  display: none;
-} */
-
-/* Pages */
+/* ---PAGES--- */
 
 .navigation-link {
   text-align: center;
@@ -71,6 +61,8 @@ h3 {
 .user-navigation .navigation-link {
   background-color: #FEC7D5;
 }
+
+/* ---MAIN-INDEX--- */
 
 .promo-title {
   font-size: 36px;
@@ -155,7 +147,7 @@ h3 {
 }
 
 .delivery {
-  background-image: url(..//images/fon/Dost.jpg);
+  background-image: url("../images/fon/Dost.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -176,6 +168,8 @@ h3 {
   line-height: 20px;
 }
 
+/* ---FOOTER--- */
+
 .footer-info a {
   font-size: 14px;
   line-height: 20px;
@@ -194,14 +188,14 @@ h3 {
   line-height: 16px;
 }
 
-/* Catalog */
+/* ---CATALOG--- */
 
 .navigation-link-current {
   color: #FCFCFC;
   background-color: #FF4A78;
 }
 
-.bredcrambs-link {
+.breadcrambs-link {
   color: inherit;
 }
 
@@ -220,9 +214,9 @@ h3 {
 .catalog-form .button {
   font-weight: 700;
 }
+
 .pagination-link {
   color: inherit;
- text-decoration: none;
- line-height: 20px;
+  text-decoration: none;
+  line-height: 20px;
 }
-data
