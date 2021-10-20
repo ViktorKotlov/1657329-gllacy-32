@@ -14,7 +14,7 @@
         <img class="logo" src="images/vector/logo.svg" width="137" height="56" alt="Логотип магазина Глэйси">
       </a>
       <nav class="main-navigation">
-        <ul class="navigation-list site-navigation">
+        <ul class="navigation-list site-navigation reset-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
           </li>
@@ -26,7 +26,7 @@
           </li>
         </ul>
         <a class="phone" href="tel:+78005558628">+7 800 555-86-28</a>
-        <ul class="navigation-list user-navigation">
+        <ul class="navigation-list user-navigation reset-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visualli-hidden">
@@ -54,71 +54,143 @@
     <main class="main-conteiner">
       <h1 class="visually-hidden">Магазин мороженного Глэйси</h1>
       <section class="promo">
-        <h2 class="visually-hidden">Галерея товаров</h2>
         <div class="promo-slider">
-          <div class="text-content">
-            <span class="promo-title">
-              Нежный пломбир <br>
-              с клубничным джемом
-            </span>
-            <p>Натуральное мороженое из свежих сливок <br>
-              и молока с вкуснейшим клубничным джемом <br> – это идеальный десерт для всей семьи.
-            </p>
-            <a class="button button-promo" href="#">
-              <span class="promo-button-text">Заказать</span>
-            </a>
-          </div>
-          <div class="block-promo-current">
-            <button class="promo-button promo-prev" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <img class="promo-image promo-image-current" src="images/ice-cream-plombir.png" width="306" height="507"
-              alt="Нежный пломбир">
-            <button class="promo-button promo-next" type="button">
-              <span class="visually-hidden">Следующее фото</span>
-            </button>
-            <img class="promo-image" src="images/banana.png" width="66" height="150" alt="Сливочное мороженое">
-            <img class="promo-image" src="images/marshmallows.png" width="66" height="150" alt="Карамельный пломбир">
-          </div>
+          <ul class="slider-list reset-list">
+            <li class="slider-item slider-item-current">
+              <div class="promo-desc">
+                <h2 class="visually-hidden">Галерея товаров</h2>
+                <span class="promo-title">
+                  Нежный пломбир <br>
+                  с клубничным джемом
+                </span>
+                <p class="text-content-desc">Натуральное мороженое из свежих сливок <br>
+                  и молока с вкуснейшим клубничным джемом <br> – это идеальный десерт для всей семьи.
+                </p>
+                <a class="button button-promo" href="#">
+                  <span class="promo-button-text">Заказать</span>
+                </a>
+              </div>
+              <div class="promo-image-wrap">
+                <img class="image" src="images/ice-cream-plombir.png" width="306" height="507" alt="Нежный пломбир">
+              </div>
+            </li>
+            <li class="slider-item">
+              <div class="promo-desc">
+                <h2 class="visually-hidden">Галерея товаров</h2>
+                <span class="promo-title">
+                  Сливочное мороженое <br>
+                  со вкусом банана
+                </span>
+                <p class="text-content-desc">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и
+                  наслаждение даже в самый жаркий летний день.
+                </p>
+                <a class="button button-promo" href="#">
+                  <span class="promo-button-text">Заказать</span>
+                </a>
+              </div>
+              <div class="promo-image-wrap">
+                <img class="image" src="images/ice-cream-banana.png" width="306" height="507" alt="Сливочное мороженое">
+              </div>
+            </li>
+            <li class="slider-item">
+              <div class="promo-desc">
+                <h2 class="visually-hidden">Галерея товаров</h2>
+                <span class="promo-title">
+                  Карамельный пломбир <br>
+                  с маршмеллоу
+                </span>
+                <p class="text-content-desc">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
+                  сердца сладкоежек всех возрастов.
+                </p>
+                <a class="button button-promo" href="#">
+                  <span class="promo-button-text">Заказать</span>
+                </a>
+              </div>
+              <div class="promo-image-wrap">
+                <img class="image" src="images/ice-cream-marshmallows.png" width="306" height="507"
+                  alt="Карамельный мороженое">
+              </div>
+            </li>
+          </ul>
+          <ul class="slider-preview-list reset-list">
+            <li class="slider-preview-item slider-preview-item-current">
+              <div class="bg-image">
+                <img class="image" src="images/banana.png" width="66" height="150" alt="Сливочное мороженое">
+              </div>
+              <div class="bg-image">
+                <img class="image" src="images/marshmallows.png" width="66" height="150" alt="Карамельный пломбир">
+              </div>
+            </li>
+            <li class="slider-preview-item">
+              <div class="bg-image">
+                <img class="image" src="images/marshmallows.png" width="66" height="150" alt="Карамельный пломбир">
+              </div>
+              <div class="bg-image">
+                <img class="image" src="images/plombir.png" width="66" height="150" alt="Карамельный пломбир">
+              </div>
+            </li>
+            <li class="slider-preview-item">
+              <div class="bg-image">
+                <img class="image" src="images/plombir.png" width="66" height="150" alt="Карамельный пломбир">
+              </div>
+              <div class="bg-image">
+                <img class="image" src="images/banana.png" width="66" height="150" alt="Сливочное мороженое">
+              </div>
+            </li>
+          </ul>
+          <ol class="promo-pagination reset-list">
+            <li class="promo-pagination-item">
+              <button class="promo-pagination-button promo-pagination-button-current" type="button">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+            </li>
+            <li class="promo-pagination-item">
+              <button class="promo-pagination-button" type="button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+            </li>
+            <li class="promo-pagination-item">
+              <button class="promo-pagination-button" type="button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </li>
+          </ol>
+          <ul class="slider-buttons-item reset-list">
+            <li class="slider-buttons-list">
+              <button class="promo-arrow promo-prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+            </li>
+            <li class="slider-buttons-list">
+              <button class="promo-arrow promo-next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </li>
+          </ul>
         </div>
-        <ol class="promo-pagination">
-          <li class="promo-pagination-item">
-            <button class="promo-pagination-button promo-pagination-button-current" type="button">
-              <span class="visually-hidden">1 фото</span>
-            </button>
-          </li>
-          <li class="promo-pagination-item">
-            <button class="promo-pagination-button" type="button">
-              <span class="visually-hidden">2 фото</span>
-            </button>
-          </li>
-          <li class="promo-pagination-item">
-            <button class="promo-pagination-button" type="button">
-              <span class="visually-hidden">3 фото</span>
-            </button>
-          </li>
-        </ol>
-        <ul class="social-list">
-          <li class="social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Фэйсбук</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-        </ul>
+        <div class="promo-social">
+          <ul class="social-list reset-list">
+            <li class="social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">Фэйсбук</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="presents">
         <h2 class="presents-title">Заказывайте мороженое и получайте подарки!</h2>
-        <ul class="presents-list">
+        <ul class="presents-list reset-list">
           <li class="presents-item">
             <div class="presents-item-wrap">
               <h3 class="presents-item-title">Малинка даром!</h3>
@@ -142,55 +214,45 @@
       </section>
       <section class="assortment">
         <h2 class="assortment-heading">Попробуйте самые популярные вкусы нашего мороженого</h2>
-        <ul class="assortment-list">
+        <ul class="assortment-list reset-list">
           <li class="assortment-item">
             <img class="assortment-image" src="images/catalog/raspberries.png" width="168" height="168"
               alt="Шарик мороженного">
-            <div class="assortment-item-wrap">
-              <h3 class="assortment-title">Малинка</h3>
-              <p>Сливочное мороженое с малиновым джемом</p>
-            </div>
+            <h3 class="assortment-title">Малинка</h3>
+            <p>Сливочное мороженое с малиновым джемом</p>
             <b>310 ₽/кг</b>
             <button class="assortment-button" type="button">
-              <img src="images/vector/basket-prod.svg" width="16" height="16" alt="значек корзины">
+              <img src="images/vector/basket-prod.svg" width="32" height="32" alt="значек корзины">
             </button>
           </li>
           <li class="assortment-item">
-
             <img class="assortment-image" src="images/catalog/pistachio.png" width="168" height="168"
               alt="Шарик мороженного">
-            <div class="assortment-item-wrap">
-              <h3 class="assortment-title">Фисташка</h3>
-
-              <p>Фисташковый пломбир с кусочками шоколада</p>
-            </div>
+            <h3 class="assortment-title">Фисташка</h3>
+            <p>Фисташковый пломбир с кусочками шоколада</p>
             <b>340 ₽/кг</b>
             <button class="assortment-button" type="button">
-              <img src="images/vector/basket-prod.svg" width="16" height="16" alt="значек корзины">
+              <img src="images/vector/basket-prod.svg" width="32" height="32" alt="значек корзины">
             </button>
           </li>
           <li class="assortment-item">
             <img class="assortment-image" src="images/catalog/blueberry.png" width="168" height="168"
               alt="Шарик мороженного">
-            <div class="assortment-item-wrap">
-              <h3 class="assortment-title">Черника</h3>
-              <p>Крем-брюле с черничным джемом</p>
-            </div>
+            <h3 class="assortment-title">Черника</h3>
+            <p>Крем-брюле с черничным джемом</p>
             <b>330 ₽/кг</b>
             <button class="assortment-button" type="button">
-              <img src="images/vector/basket-prod.svg" width="16" height="16" alt="значек корзины">
+              <img src="images/vector/basket-prod.svg" width="32" height="32" alt="значек корзины">
             </button>
           </li>
           <li class="assortment-item">
             <img class="assortment-image" src="images/catalog/bubble-gum.png" width="168" height="168"
               alt="Шарик мороженного">
-            <div class="assortment-item-wrap">
-              <h3 class="assortment-title">Бабл-гам</h3>
-              <p>Ванильный пломбир со сладкой посыпкой</p>
-            </div>
+            <h3 class="assortment-title">Бабл-гам</h3>
+            <p>Ванильный пломбир со сладкой посыпкой</p>
             <b>320 ₽/кг</b>
             <button class="assortment-button" type="button">
-              <img src="images/vector/basket-prod.svg" width="16" height="16" alt="значек корзины">
+              <img src="images/vector/basket-prod.svg" width="32" height="32" alt="значек корзины">
             </button>
           </li>
         </ul>
@@ -200,7 +262,7 @@
         <div class="description-wrap">
           <p class="description-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
             проиводства на развес</p>
-          <ul class="description-item">
+          <ul class="description-item reset-list">
             <li class="description-list">
               <img class="description-image" src="images/vector/ice-cream.svg" width="48" height="48"
                 alt="значек мороженного">
@@ -253,40 +315,43 @@
         </section>
       </div>
       <section class="delivery">
-        <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
-        <p class="delivery-desc">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите
-          доставку мороженого на
-          дом
-          и курьер привезет вам ваш заказ в течение часа!</p>
-      </section>
-      <section class="delivery-content">
-        <h2 class="visually-hidden">Форма доставки</h2>
-        <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-        <form class="form-delivery" action="https://echo.htmlacademy.ru/" method="POST">
-          <p class="form-delivery-date">
-            <span class="form-label form-label-icon">
-              <label for="form-label-date">Дата</label>
-              <button class="info" type="button">
-                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-              </button>
-            </span>
-            <input type="text" id="form-label-date" name="date-delivery" placeholder="01.04.2020">
-          </p>
-          <p class="form-delivery-phone">
-            <label for="form-label-phone">Телефон</label>
-            <input type="text" id="form-label-phone" name="phone" placeholder="+7 800 999-00-00">
-          </p>
-          <p class="form-delivery-adress">
-            <span class="form-label form-label-icon">
-              <label for="form-label-adres">Адрес</label>
-              <button class="info" type="button">
-                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-              </button>
-            </span>
-            <input type="text" id="form-label-adres" name="adres" placeholder="ул. Большая Конюшенная, 19/8">
-          </p>
-          <a class="link-form button" href="#"><span>Отправить</span></a>
-        </form>
+        <div class="delivery-desc">
+          <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
+          <p class="delivery-desc-text">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин?
+            Закажите
+            доставку мороженого на
+            дом
+            и курьер привезет вам ваш заказ в течение часа!</p>
+        </div>
+        <section class="delivery-content">
+          <h2 class="visually-hidden">Форма доставки</h2>
+          <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <form class="form-delivery" action="https://echo.htmlacademy.ru/" method="POST">
+            <p class="form-delivery-date">
+              <span class="form-label form-label-icon">
+                <label for="form-label-date">Дата</label>
+                <button class="info" type="button">
+                  <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                </button>
+              </span>
+              <input type="text" id="form-label-date" name="date-delivery" placeholder="01.04.2020">
+            </p>
+            <p class="form-delivery-phone">
+              <label for="form-label-phone">Телефон</label>
+              <input type="text" id="form-label-phone" name="phone" placeholder="+7 800 999-00-00">
+            </p>
+            <p class="form-delivery-adress">
+              <span class="form-label form-label-icon">
+                <label for="form-label-adres">Адрес</label>
+                <button class="info" type="button">
+                  <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                </button>
+              </span>
+              <input type="text" id="form-label-adres" name="adres" placeholder="ул. Большая Конюшенная, 19/8">
+            </p>
+            <a class="link-form button" href="#"><span>Отправить</span></a>
+          </form>
+        </section>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Адрес</h2>
@@ -303,7 +368,7 @@
     <footer class="page-footer">
       <section class="social">
         <h3 class="visually-hidden">Соцсети</h3>
-        <ul class="social-list">
+        <ul class="social-list reset-list">
           <li class="social-item">
             <a class="button" href="#">
               <span class="visually-hidden">ВКонтакте</span>
