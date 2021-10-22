@@ -24,6 +24,12 @@
   font-display: swap;
 }
 
+.text-bold {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
 /*
 outline: 5px solid red;
 outline-offset: -5px;
@@ -94,9 +100,9 @@ body {
 
 /* ---PAGES--- */
 
-/* .main-conteiner>*:not(:last-child) {
+.main-conteiner>*:not(:last-child) {
   margin-bottom: 80px;
-} */
+}
 
 .page-header {
   display: flex;
@@ -111,8 +117,7 @@ body {
 .main-navigation {
   display: flex;
   width: 1017px;
-  margin-left: 16px;
-}
+  margin: 42px 0 42px 16px;}
 
 .navigation-list {
   display: flex;
@@ -168,6 +173,7 @@ body {
 
 .promo-desc {
   width: 470px;
+  padding-top: 136px;
 }
 
 .promo-title {
@@ -176,25 +182,31 @@ body {
   font-weight: 900;
   width: 470px;
 }
-
-.promo-image-wrap {
-  width: 312px;
-  margin-left: 21px;
+.text-content-desc {
+  margin: 24px 0 24px 0;
+}
+.button-promo {
+  margin-top: 24px;
+  display: inline-block;
 }
 
-.promo-image-wrap.image {
+.promo-image-wrap {
+  margin: 22px 0 0 21px;
+}
+
+.promo-image-wrap .image {
   display: block;
-  margin: 0 auto;
 }
 
 .slider-preview-list {
-  margin-left: 56px;
+  margin-left: 62px;
+  display: flex;
+  align-items: center;
 }
-
 .slider-preview-item {
   display: flex;
-  justify-content: space-between;
 }
+
 
 .slider-preview-item:not(.slider-preview-item-current) {
   display: none;
@@ -202,6 +214,9 @@ body {
 
 .bg-image {
   width: 100px;
+}
+.bg-image:first-child {
+  margin-right: 41px;
 }
 
 .bg-image .image {
@@ -293,6 +308,7 @@ body {
   width: 443px;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 56px;
 }
 
 .presents-list {
@@ -307,12 +323,13 @@ body {
 }
 
 .presents-item-wrap {
-  padding: 40px;
-  width: 304px;
+  padding: 40px 0 40px 40px;
+  width: 321px;
+  margin-right: 13px;
 }
-
-.presents-item-title {
-  text-align: start;
+.presents-item-wrap-marshmallows {
+  width: 294px;
+  margin-right: 0;
 }
 
 .presents-item {
@@ -323,9 +340,15 @@ body {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  text-align: start;
+  margin: 0;
+  margin-bottom: 16px;
 }
-
-.assortment-item b, .contacts-content-adres, .contacts-content-phone {
+.presents-item-desc {
+  margin: 0;
+  margin-bottom: 32px;
+}
+.text-norm {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -333,7 +356,7 @@ body {
 
 .assortment-heading {
   width: 527px;
-  margin: 0 auto;
+  margin: 0 auto 56px auto;
   text-align: center;
 }
 
@@ -345,6 +368,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   max-width: 1170px;
+  margin-bottom: 16px;
 
 }
 
@@ -352,14 +376,14 @@ body {
   width: 270px;
   margin-right: 30px;
   background-color: #FCFCFC;
-  /* position: relative;
   margin-top: 51px;
+  /* position: relative;
   display: grid;
   grid-template-columns: 40px 158px 32px 40px;
   grid-template-rows: 133px min-content min-content auto 16px;
   row-gap: 8px;
 
-  ----------ЗАКОМЕНТИЛ КАРТОЧКИ-----------*/
+  ----------ЗАКОМЕНТИЛ КАРТОЧКИ----------- */
 }
 .assortment-item:nth-child(4n) {
   margin-right: 0;
@@ -413,7 +437,7 @@ body {
   background-color: tan;
   background-size: 100% auto;
   box-sizing: border-box;
-  /* padding: 24px; */
+  padding: 24px;
 }
 
 .description-wrap {
@@ -430,22 +454,22 @@ body {
 }
 
 .description-item {
-  /* display: flex;
-  flex-wrap: wrap; */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .description-list {
-  /* display: flex; */
+  display: flex;
   width: 505px;
 }
 
-/* .description-list:not(:nth-child(2n)) {
+.description-list:not(:nth-child(2n)) {
   margin-right: 32px;
 }
 
 .description-list:not(:nth-last-child(-n+2)):not(:last-child) {
   margin-bottom: 40px;
-} */
+}
 
 .description-image {
   margin-right: 15px;
@@ -465,7 +489,7 @@ body {
 .news {
   width: 570px;
   background-color: white;
-  /* background-image: url("../images/background/blog.jpg"); */
+  background-image: url("../images/background/blog.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -477,7 +501,7 @@ body {
 
 .news-text {
   display: block;
-  margin: 0 0 32px 32px;
+  margin: 0 0 63px 32px;
   max-width: 303px;
   font-size: 24px;
   line-height: 30px;
@@ -490,10 +514,22 @@ body {
 }
 
 .mailing-desc {
-  margin: 26px;
+  margin: 26px 26px 42px 26px;
   max-width: 506px;
 }
+.mailing-form {
+  margin-left: 26px;
+  display: flex;
 
+}
+.mailing-email {
+  margin: 0 24px 0 0;
+}
+.field {
+  width: 332px;
+    height: 48px;
+    padding-left: 16px;
+}
 .mailing-button, .form-delivery .button, .contacts-content .button {
   background-color: #FF2F63;
   color: #FCFCFC;
@@ -501,7 +537,7 @@ body {
 
 .delivery {
   background-color: rgb(207, 207, 207);
-  /* background-image: url("../images/background/dost.jpg"); */
+  background-image: url("../images/background/dost.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   display: flex;
@@ -526,6 +562,8 @@ body {
   height: 406px;
   background-color: white;
   margin: 64px 64px 64px auto;
+  padding: 40px 40px 42px 40px;
+  box-sizing: border-box;
 }
 
 .form-delivery label {
@@ -537,7 +575,7 @@ body {
   width: 1170px;
   padding: 64px;
   background-color: wheat;
-  /* background-image: url(..//images/background/obr-sv.jpg); */
+  background-image: url(..//images/background/obr-sv.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -560,6 +598,7 @@ body {
 .page-footer {
   display: flex;
   justify-content: space-between;
+  padding: 48px 0 48px 0;
 }
 
 .footer-info {
@@ -596,6 +635,7 @@ body {
 .copyright p {
   font-size: 12px;
   line-height: 16px;
+  margin: 14px 0 0 0;
 }
 
 /* ---CATALOG--- */
@@ -603,7 +643,10 @@ body {
 .main-container {
   flex-grow: 1;
 }
-
+.catalog {
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
 .navigation-link-current {
   color: #FCFCFC;
   background-color: #FF4A78;
@@ -613,6 +656,7 @@ body {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 16px;
 }
 
 .breadcrambs-item {
@@ -628,12 +672,14 @@ body {
   line-height: 46px;
   font-weight: 900;
   margin: 0;
+  margin-bottom: 40px;
 }
 
 .catalog-form {
   width: 807px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 48px;
 }
 
 .catalog-form-group {
@@ -655,6 +701,7 @@ body {
 
 .pagination-wrap {
   display: flex;
+  padding: 42px 0 42px 0;
 }
 
 .pagination {
