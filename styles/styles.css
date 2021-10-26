@@ -51,7 +51,7 @@ body {
 }
 
 .page-container {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -76,8 +76,8 @@ body {
 }
 
 .main-conteiner {
-  width: 1170px;
   display: flex;
+  flex-wrap: wrap;
   flex-grow: 1;
   flex-direction: column;
   min-height: 100%;
@@ -91,7 +91,7 @@ body {
   text-align: center;
 }
 
-.presents-item-title, .assortment-title {
+.assortment-title {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -100,13 +100,12 @@ body {
 
 /* ---PAGES--- */
 
-.main-conteiner>*:not(:last-child) {
-  margin-bottom: 80px;
+.main-conteiner>*:not(:last-child):not(.assortment) {
+  margin-bottom: 81px;
 }
 
 .page-header {
   display: flex;
-  width: 1170px;
 }
 
 .main-logo {
@@ -116,8 +115,9 @@ body {
 
 .main-navigation {
   display: flex;
-  width: 1017px;
-  margin: 42px 0 42px 16px;}
+  max-width: 1017px;
+  margin: 42px 0 42px 16px;
+}
 
 .navigation-list {
   display: flex;
@@ -136,7 +136,7 @@ body {
 .phone {
   font-weight: 700;
   margin-right: 10px;
-  margin-left: auto;
+  margin-left: 48px;
   line-height: 20px;
 }
 
@@ -172,7 +172,7 @@ body {
 }
 
 .promo-desc {
-  width: 470px;
+  max-width: 470px;
   padding-top: 136px;
 }
 
@@ -180,18 +180,22 @@ body {
   font-size: 36px;
   line-height: 46px;
   font-weight: 900;
-  width: 470px;
+  max-width: 470px;
 }
+
 .text-content-desc {
   margin: 24px 0 24px 0;
+  font-size: 18px;
+  line-height: 24px;
 }
+
 .button-promo {
   margin-top: 24px;
   display: inline-block;
 }
 
 .promo-image-wrap {
-  margin: 22px 0 0 21px;
+  margin: 22px 0 0 62px;
 }
 
 .promo-image-wrap .image {
@@ -201,12 +205,11 @@ body {
 .slider-preview-list {
   margin-left: 62px;
   display: flex;
-  align-items: center;
 }
+
 .slider-preview-item {
   display: flex;
 }
-
 
 .slider-preview-item:not(.slider-preview-item-current) {
   display: none;
@@ -214,7 +217,9 @@ body {
 
 .bg-image {
   width: 100px;
+  margin-top: 204px;
 }
+
 .bg-image:first-child {
   margin-right: 41px;
 }
@@ -313,7 +318,7 @@ body {
 
 .presents-list {
   display: flex;
-  width: 1170px;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -322,40 +327,56 @@ body {
   width: 570px;
 }
 
+.presents-item_raspberry {
+  background-image: url("..//images/background/malin.png");
+  background-repeat: no-repeat;
+  background-position: 374px 28px;
+}
+
 .presents-item-wrap {
   padding: 40px 0 40px 40px;
-  width: 321px;
-  margin-right: 13px;
+  max-width: 321px;
 }
+
 .presents-item-wrap-marshmallows {
-  width: 294px;
-  margin-right: 0;
+  max-width: 294px;
+}
+
+.presents-item_marshmallows {
+  background-image: url("..//images/background/zefir.png");
+  background-repeat: no-repeat;
+  background-position: 331px 19px;
 }
 
 .presents-item {
   background-color: #FF7799;
+  /* временный размер - убрать!!! */
+  height: 268px;
 }
 
 .presents-item-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-  text-align: start;
   margin: 0;
   margin-bottom: 16px;
 }
+
 .presents-item-desc {
   margin: 0;
   margin-bottom: 32px;
 }
+
 .text-norm {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  align-self: flex-start;
+  padding-top: 3px;
 }
 
 .assortment-heading {
-  width: 527px;
+  max-width: 527px;
   margin: 0 auto 56px auto;
   text-align: center;
 }
@@ -367,54 +388,49 @@ body {
 .assortment-list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1170px;
-  margin-bottom: 16px;
-
 }
 
 .assortment-item {
   width: 270px;
   margin-right: 30px;
-  background-color: #FCFCFC;
-  margin-top: 51px;
-  /* position: relative;
-  display: grid;
-  grid-template-columns: 40px 158px 32px 40px;
-  grid-template-rows: 133px min-content min-content auto 16px;
-  row-gap: 8px;
-
-  ----------ЗАКОМЕНТИЛ КАРТОЧКИ----------- */
+  margin-bottom: 40px;
+  padding-top: 51px;
 }
+
 .assortment-item:nth-child(4n) {
   margin-right: 0;
 }
 
+.assortment-item-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 133px 40px 24px 40px;
+  position: relative;
+  background-color: #FCFCFC;
+}
+
 .assortment-image {
-  display: block;
-  margin: 0 auto;
-  /* position: absolute;
+  position: absolute;
   top: -51px;
-  left: 51px; */
+  left: 39px;
 }
 
 .assortment-title {
-  margin: 0;
-  grid-column: 2/4;
-  grid-row: 2/3;
+  margin: 0 auto;
+  align-content: stretch;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 .assortment-item p {
   text-align: center;
   margin: 0;
-  grid-column: 2/4;
-  grid-row: 3/4;
+  margin-bottom: 16px;
+  align-content: stretch;
 }
 
 .assortment-item b {
-  margin-top: 12px;
-  grid-column: 2/3;
-  grid-row: 4/5;
-  align-self: end;
+  width: 150px;
 }
 
 .assortment-button {
@@ -425,24 +441,26 @@ body {
   background-color: transparent;
   cursor: pointer;
   line-height: 0;
-  margin-top: 8px;
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
   justify-self: end;
-  grid-column: 3/4;
-  grid-row: 4/5;
   align-self: end;
 }
 
 .description {
-  width: 1170px;
+  max-width: 1170px;
   background-color: tan;
-  background-size: 100% auto;
+  background-image: url("../images/background/fon-description.png");
+  background-repeat: repeat;
   box-sizing: border-box;
   padding: 24px;
+  margin-top: 39px;
 }
 
 .description-wrap {
   background-color: #FCFCFC;
-  padding: 56px 40px;
+  padding: 57px 40px 56px 40px;
 }
 
 .description-title {
@@ -464,7 +482,7 @@ body {
 }
 
 .description-list:not(:nth-child(2n)) {
-  margin-right: 32px;
+  margin-right: 30px;
 }
 
 .description-list:not(:nth-last-child(-n+2)):not(:last-child) {
@@ -477,21 +495,22 @@ body {
 
 .description-list p {
   margin: 0;
-  width: 440px;
+  width: 441px;
 }
 
 .news-mailing {
-  width: 1170px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .news {
-  width: 570px;
+  flex-grow: 1;
+  margin-right: 30px;
   background-color: white;
   background-image: url("../images/background/blog.jpg");
-  background-size: 100% auto;
   background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .news p {
@@ -501,7 +520,7 @@ body {
 
 .news-text {
   display: block;
-  margin: 0 0 63px 32px;
+  margin: 0 32px 63px 32px;
   max-width: 303px;
   font-size: 24px;
   line-height: 30px;
@@ -510,26 +529,38 @@ body {
 
 .mailing {
   width: 570px;
+  padding: 6px;
+  background-color: gray;
+  background-image: url("../images/background/mailing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.mailing-wrap {
   background-color: white;
+  padding: 26px;
 }
 
 .mailing-desc {
-  margin: 26px 26px 42px 26px;
-  max-width: 506px;
+  margin: 0;
 }
-.mailing-form {
-  margin-left: 26px;
-  display: flex;
 
+.mailing-form {
+  display: flex;
+  margin-top: 42px;
 }
+
 .mailing-email {
   margin: 0 24px 0 0;
 }
+
 .field {
   width: 332px;
-    height: 48px;
-    padding-left: 16px;
+  height: 48px;
+  padding-left: 16px;
 }
+
 .mailing-button, .form-delivery .button, .contacts-content .button {
   background-color: #FF2F63;
   color: #FCFCFC;
@@ -572,10 +603,9 @@ body {
 }
 
 .contacts {
-  width: 1170px;
   padding: 64px;
   background-color: wheat;
-  background-image: url(..//images/background/obr-sv.jpg);
+  background-image: url("..//images/background/obr-sv.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -606,7 +636,6 @@ body {
   grid-template-columns: auto auto;
   grid-auto-flow: row;
   column-gap: 24px;
-  row-gap: 8px;
   padding: 0;
   margin: 0 200px;
 }
@@ -628,6 +657,10 @@ body {
   width: 207px;
 }
 
+.copyright-image {
+  margin-top: 2px;
+}
+
 .copyright a {
   color: inherit;
 }
@@ -635,7 +668,7 @@ body {
 .copyright p {
   font-size: 12px;
   line-height: 16px;
-  margin: 14px 0 0 0;
+  margin: 11px 0 0 0;
 }
 
 /* ---CATALOG--- */
@@ -643,10 +676,12 @@ body {
 .main-container {
   flex-grow: 1;
 }
+
 .catalog {
-  margin-top: 32px;
+  margin-top: 30px;
   margin-bottom: 40px;
 }
+
 .navigation-link-current {
   color: #FCFCFC;
   background-color: #FF4A78;
@@ -656,7 +691,7 @@ body {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 }
 
 .breadcrambs-item {
@@ -665,6 +700,13 @@ body {
 
 .breadcrambs-link {
   color: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.catalog-filter {
+  margin-bottom: 48px;
 }
 
 .catalog-filter-title {
@@ -680,6 +722,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 48px;
+  height: 144px;
+  /* вркменно указал height */
 }
 
 .catalog-form-group {
@@ -692,7 +736,6 @@ body {
   font-weight: 700;
 }
 
-
 .pagination-wrap-button {
   position: absolute;
   left: 50%;
@@ -701,7 +744,7 @@ body {
 
 .pagination-wrap {
   display: flex;
-  padding: 42px 0 42px 0;
+  padding: 27px 0 42px 0;
 }
 
 .pagination {
