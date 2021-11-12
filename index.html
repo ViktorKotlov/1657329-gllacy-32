@@ -43,8 +43,11 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <svg class="navigation-link-basket" aria-hidden="true" focusable="false" width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.313.49a.667.667 0 0 0 0 1.333h2.06l.54 2.696a.662.662 0 0 0 .011.056l1.09 5.44a1.97 1.97 0 0 0 1.962 1.586h6.325a1.97 1.97 0 0 0 1.963-1.586l.001-.005 1.043-5.47a.667.667 0 0 0-.655-.791H5.12l-.545-2.724A.667.667 0 0 0 3.92.49H1.313zM6.32 9.754l-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.958a.637.637 0 0 1-.637-.512v-.001zm-1.11 4.44a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0zm7.17 0a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0z" fill="#2D3440"/></svg>
-
+              <svg class="navigation-link-cart" aria-hidden="true" focusable="false" width="17" height="16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.313.49a.667.667 0 0 0 0 1.333h2.06l.54 2.696a.662.662 0 0 0 .011.056l1.09 5.44a1.97 1.97 0 0 0 1.962 1.586h6.325a1.97 1.97 0 0 0 1.963-1.586l.001-.005 1.043-5.47a.667.667 0 0 0-.655-.791H5.12l-.545-2.724A.667.667 0 0 0 3.92.49H1.313zM6.32 9.754l-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.958a.637.637 0 0 1-.637-.512v-.001zm-1.11 4.44a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0zm7.17 0a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0z"
+                  fill="#2D3440" /></svg>
               <span class="main-navigation-basket">
                 Пусто
               </span>
@@ -52,6 +55,32 @@
           </li>
         </ul>
       </nav>
+      <div class="modal-search modal">
+        <label class="visually-hidden" for="search-to-site">Search</label>
+        <input class="field" placeholder="Поиск по сайту" type="search" name="search" id="search-to-site">
+      </div>
+      <div class="modal-in-form modal">
+        <form class="in-form-wrap" action="https://echo.htmlacademy.ru/" method="POST">
+          <span class="modal-in-text presents-item-title">Личный кабинет</span>
+          <p class="modal-in-mailing ">
+            <label class="visually-hidden" for="mailing-email">Email</label>
+            <input class="field" placeholder="email@example.com" type="email" name="email" id="mailing-email" required>
+          </p>
+          <p class="modal-in-mailing ">
+            <label class="visually-hidden" for="password">Password</label>
+            <input class="field" placeholder="" type="password" name="password" id="password" required>
+          </p>
+          <span class="button-pink-wrap link-form-wrap"><button class="link-form button button-pink"
+              type="button"><span>Войти</span></button></span>
+        </form>
+        <div class="in-form-hints">
+          <a class="hints" href="#"><span class="hints-text">Забыли пароль?</span></a>
+          <a class="hints" href="#"><span class="hints-text">Регистрация</span></a>
+        </div>
+      </div>
+      <div class="modal-basket-index modal">
+        <span class="modal-basket-text presents-item-title">Ваша корзина пока пуста</span>
+      </div>
     </header>
     <main class="main-conteiner">
       <h1 class="visually-hidden">Магазин мороженного Глэйси</h1>
@@ -368,13 +397,14 @@
               Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="mailing-form" action="http://echo.htmlacademy.ru/" method="POST">
               <p class="mailing-email">
-                <label class="visually-hidden" for="mailing-email">Email</label>
-                <input class="field" placeholder="email@example.com" type="email" name="email" id="mailing-email"
-                  required>
+                <label class="visually-hidden" for="mail-email">Email</label>
+                <input class="field" placeholder="email@example.com" type="email" name="email" id="mail-email" required>
               </p>
-              <span class="button-pink-wrap"><button class="mailing-button button-pink" type="button"></span>
-              <span>Отправить</span>
-              </button>
+              <span class="button-pink-wrap">
+                <button class="mailing-button button-pink" type="button">
+                  <span>Отправить</span>
+                </button>
+              </span>
             </form>
           </div>
         </section>
@@ -400,11 +430,11 @@
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
               </span>
-              <input class="field"  type="text" id="form-label-date" name="date-delivery" placeholder="01.04.2020">
+              <input class="field" type="text" id="form-label-date" name="date-delivery" placeholder="01.04.2020">
             </p>
             <p class="field-group form-delivery-phone">
               <span class="form-label"><label for="form-label-phone">Телефон</label></span>
-              <input  class="field" type="text" id="form-label-phone" name="phone" placeholder="+7 800 999-00-00">
+              <input class="field" type="text" id="form-label-phone" name="phone" placeholder="+7 800 999-00-00">
             </p>
             <p class="field-group form-delivery-adress">
               <span class="form-label form-label-icon">
@@ -413,7 +443,8 @@
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
               </span>
-              <input  class="field" type="text" id="form-label-adres" name="adres" placeholder="ул. Большая Конюшенная, 19/8">
+              <input class="field" type="text" id="form-label-adres" name="adres"
+                placeholder="ул. Большая Конюшенная, 19/8">
             </p>
             <span class="button-pink-wrap link-form-wrap"><button class="link-form button button-pink"
                 type="button"><span>Отправить</span></button></span>
@@ -433,6 +464,26 @@
         </div>
       </section>
     </main>
+    <div class="modal-feedback modal">
+      <form class="feedback-wrap" action="https://echo.htmlacademy.ru/" method="POST">
+        <span class="feedback-text presents-item-title">Мы обязательно ответим вам!</span>
+        <p class="feedback-mailing ">
+          <label class="visually-hidden" for="name">Имя и фамилия</label>
+          <input class="field" placeholder="Имя и фамилия" type="text" name="name" id="name">
+        </p>
+        <p class="feedback-mailing ">
+          <label class="visually-hidden" for="feed-mail-email">Email</label>
+          <input class="field" placeholder="email@example.com" type="email" name="email" id="feed-mail-email" required>
+        </p>
+        <p class="feedback-mailing ">
+          <label class="visually-hidden" for="free-field">Свободное поле</label>
+          <textarea class="field" placeholder="В свободной форме" rows="5" name="free-field" id="free-field"></textarea>
+        </p>
+        <span class="button-pink-wrap link-form-wrap"><button class="link-form button button-pink"
+            type="button"><span>Отправить</span></button></span>
+        <button type="button" class="feedback-close modal-assortment-button"></button>
+      </form>
+    </div>
     <footer class="page-footer">
       <section class="social">
         <h3 class="visually-hidden">Соцсети</h3>
