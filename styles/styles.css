@@ -71,7 +71,7 @@ body {
   list-style-type: none;
 }
 
-.main-conteiner {
+.main-container {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
@@ -162,17 +162,17 @@ body {
   position: relative;
 }
 
-.user-navigation .navigation-item:nth-child(1) .navigation-link {
+.navigation-item-user:nth-child(1) .navigation-link {
   background-image: url("../images/vector/search.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.user-navigation .navigation-item:nth-child(2) .navigation-link, .user-navigation .navigation-item:nth-child(3) .navigation-link {
+.navigation-item-user:nth-child(2) .navigation-link, .navigation-item-user:nth-child(3) .navigation-link {
   padding-left: 40px;
 }
 
-.user-navigation .navigation-item:nth-child(2) .navigation-link::before {
+.navigation-item-user:nth-child(2) .navigation-link::before {
   content: "";
   position: absolute;
   background-image: url("../images/vector/union.svg");
@@ -189,6 +189,19 @@ body {
   position: absolute;
   top: 9px;
   left: 16px;
+}
+
+.navigation-link:hover, .navigation-link:focus {
+  background-color: #FDD6E0;
+  border-radius: 26px;
+}
+
+.navigation-link:focus {
+  outline: 2px solid black;
+}
+
+.navigation-link:active {
+  background-color: white;
 }
 
 .modal {
@@ -432,7 +445,6 @@ body {
 .promo-button {
   width: 38px;
   height: 38px;
-  margin-right: ;
 }
 
 .promo-pagination {
@@ -533,8 +545,8 @@ body {
   width: 570px;
 }
 
-.presents-item_raspberry {
-  background-image: url("..//images/background/malin.png");
+.presents-item_raspberries {
+  background-image: url("../images/background/raspberries.png");
   background-repeat: no-repeat;
   background-position: 374px 28px;
 }
@@ -549,7 +561,7 @@ body {
 }
 
 .presents-item_marshmallows {
-  background-image: url("..//images/background/zefir.png");
+  background-image: url("../images/background/marshmallows.png");
   background-repeat: no-repeat;
   background-position: 331px 19px;
 }
@@ -720,7 +732,26 @@ body {
 }
 
 .description-image {
+  width: 48px;
+  height: 48px;
   margin-right: 15px;
+  background-repeat: no-repeat;
+}
+
+.description-image_ice-cream {
+  background-image: url("../images/vector/ice-cream.svg");
+}
+
+.description-image_cow {
+  background-image: url("../images/vector/cow.svg");
+}
+
+.description-image_leaflet {
+  background-image: url("../images/vector/leaflet.svg");
+}
+
+.description-image_thermometer {
+  background-image: url("../images/vector/thermometer.svg");
 }
 
 .description-list p {
@@ -992,7 +1023,7 @@ body {
   padding: 12px 32px;
   display: inline-block;
   border: 4px solid rgba(255, 47, 100, 0.3);
-  box-shadow: 0px 4px 12px rgb(45 52 64 / 10%);
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   margin-left: -4px;
 }
@@ -1085,15 +1116,34 @@ body {
   margin-bottom: 17px;
 }
 
-.breadcrambs-item {
+.breadcrumbs-item {
   margin-right: 28px;
+  position: relative;
 }
 
-.breadcrambs-link {
+.breadcrumbs-item:not(:last-child)::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  top: 10px;
+  right: -19px;
+  background-image: url("../images/vector/union-breadcrumbs.svg");
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.breadcrumbs-link {
   color: inherit;
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
+  text-decoration: none;
+  padding-bottom: 1px;
+}
+
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link {
+  border-bottom: 1px solid black;
 }
 
 .catalog-filter {
@@ -1207,10 +1257,6 @@ body {
   border-color: white;
 }
 
-.control-input:disabled+.control-input[type="radio"]+.control-mark {
-  border-color: #AA7E8F;
-}
-
 .catalog-form-item:not(:nth-last-child(1)) .control {
   margin-right: 16px;
 }
@@ -1256,6 +1302,14 @@ body {
   left: 0px;
 }
 
+.control:hover .control-input[type="checkbox"]:not(:checked)+.control-mark {
+  background-image: url("../images/vector/check-off-hover.svg");
+}
+
+/* .control:disabled+.control-input[type="checkbox"]:not(:disabled)+.control-mark{
+  background-image: url("../images/vector/check-off-disabled.svg");
+} */
+
 .control-input[type="checkbox"]:checked+.control-mark::before {
   content: "";
   position: absolute;
@@ -1266,6 +1320,14 @@ body {
   top: 0px;
   left: 0px;
 }
+
+.control:hover .control-input[type="checkbox"]:checked+.control-mark::before {
+  background-image: url("../images/vector/check-on-hover.svg");
+}
+
+/* .control+.control-input[type="checkbox"]:disabled+.control-mark::before {
+  background-image: url("../images/vector/check-off-disabled.svg");
+} */
 
 .catalog-form-input {
   width: 25px;
@@ -1299,22 +1361,14 @@ body {
   font-size: 14px;
   appearance: none;
   cursor: pointer;
+  background-image: url("../images/vector/union-select.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
 }
 
 .catalog-form-label-wrap {
   position: relative;
   cursor: pointer;
-}
-
-.catalog-form-label-wrap::before {
-  content: "";
-  position: absolute;
-  background-image: url("../images/vector/union-select.svg");
-  background-repeat: no-repeat;
-  top: 16px;
-  right: 15px;
-  width: 12px;
-  height: 6px
 }
 
 .button-catalog-form {
@@ -1405,7 +1459,7 @@ body {
   right: 0;
   top: 76px;
   width: 441px;
-  padding: 48px;
+  padding: 48px 48px 43px 48px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -1417,18 +1471,18 @@ body {
 
 .modal-products-list {
   list-style: none;
-  margin: 17px 0 29px 0;
+  margin: 17px 0 27px 0;
   padding: 0;
   border-bottom: 1px solid #E7E7E7;
 }
 
 .modal-products-item {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .modal-products-item:last-child {
-  margin-bottom: 26px;
+  margin-bottom: 30px;
 }
 
 .modal-assortment-title {
@@ -1441,7 +1495,7 @@ body {
 }
 
 .modal0text-wrap {
-  margin-left: 12px;
+  margin-left: 16px;
 }
 
 .modal-text {
@@ -1451,7 +1505,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
-  font-family: inter;
+  font-family: inherit;
   padding: 0;
   margin-bottom: 5px;
 }
@@ -1492,11 +1546,11 @@ body {
   transform: rotate(-45deg);
 }
 
-.modal-zakaz-wrap {
+.modal-order-wrap {
   display: flex;
   justify-content: space-between;
 }
 
-.modal-zakaz-text {
+.modal-order-text {
   margin: 0;
 }

@@ -10,6 +10,7 @@
 <body>
   <div class="page-container">
     <header class="page-header">
+      <h1 class="visually-hidden">Магазин мороженного Глэйси</h1>
       <a class="main-logo">
         <img class="logo" src="images/vector/logo.svg" width="137" height="56" alt="Логотип магазина Глэйси">
       </a>
@@ -27,21 +28,21 @@
         </ul>
         <a class="phone" href="tel:+78005558628">+7 800 555-86-28</a>
         <ul class="navigation-list user-navigation reset-list">
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-user">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-user">
             <a class="navigation-link" href="#">
               <span class="main-navigation-in">
                 Вход
               </span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-user">
             <a class="navigation-link" href="#">
               <svg class="navigation-link-cart" aria-hidden="true" focusable="false" width="17" height="16" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -66,12 +67,12 @@
             <label class="visually-hidden" for="mailing-email">Email</label>
             <input class="field" placeholder="email@example.com" type="email" name="email" id="mailing-email" required>
           </p>
-          <p class="modal-in-mailing ">
+          <p class="modal-in-mailing">
             <label class="visually-hidden" for="password">Password</label>
             <input class="field" placeholder="" type="password" name="password" id="password" required>
           </p>
           <span class="button-pink-wrap link-form-wrap"><button class="link-form button button-pink"
-              type="button"><span>Войти</span></button></span>
+              type="submit"><span>Войти</span></button></span>
         </form>
         <div class="in-form-hints">
           <a class="hints" href="#"><span class="hints-text">Забыли пароль?</span></a>
@@ -82,8 +83,7 @@
         <span class="modal-basket-text presents-item-title">Ваша корзина пока пуста</span>
       </div>
     </header>
-    <main class="main-conteiner">
-      <h1 class="visually-hidden">Магазин мороженного Глэйси</h1>
+    <main class="main-container">
       <section class="promo">
         <div class="promo-slider">
           <ul class="slider-list reset-list">
@@ -102,7 +102,7 @@
                 </a>
               </div>
               <div class="promo-image-wrap">
-                <img class="image" src="images/ice-cream-plombir.png" width="306" height="507" alt="Нежный пломбир">
+                <img class="image" src="images/ice-cream.png" width="306" height="507" alt="Нежный пломбир">
               </div>
             </li>
             <li class="slider-item">
@@ -251,7 +251,7 @@
       <section class="presents">
         <h2 class="presents-title text-bold">Заказывайте мороженое и получайте подарки!</h2>
         <ul class="presents-list reset-list">
-          <li class="presents-item presents-item_raspberry">
+          <li class="presents-item presents-item_raspberries">
             <div class="presents-item-wrap">
               <h3 class="presents-item-title">Малинка даром!</h3>
               <p class="presents-item-desc">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
@@ -355,26 +355,23 @@
             проиводства на развес</p>
           <ul class="description-item reset-list">
             <li class="description-list">
-              <img class="description-image" src="images/vector/ice-cream.svg" width="48" height="48"
-                alt="значек мороженного">
+              <div class="description-image description-image_ice-cream"></div>
               <p>Все наше мороженое изгатавливается на собственном производстве с использованием современного
                 оборудования и проверенных временем технологий.</p>
             </li>
             <li class="description-list">
-              <img class="description-image" src="images/vector/cow.svg" width="48" height="48" alt="значек коровы">
+              <div class="description-image description-image_cow"></div>
               <p>Закупка ингредиентов производится только<br> у проверенных фермерских хозяйств, с которыми<br> нас
                 связывает
                 долговременное сотрудничество.</p>
             </li>
             <li class="description-list">
-              <img class="description-image" src="images/vector/leaflet.svg" width="48" height="48"
-                alt="значек листика">
+              <div class="description-image description-image_leaflet"></div>
               <p>Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты<br>
                 и добавки произведены из натурального сырья.</p>
             </li>
             <li class="description-list">
-              <img class="description-image" src="images/vector/thermometer.svg" width="48" height="48"
-                alt="значек термометра">
+              <div class="description-image description-image_thermometer"></div>
               <p>Доставка нашего мороженого осуществляется в специальном термопаке, который не дает мороженому растаять
                 и
                 позволяет сохранить превосходный вкус.</p>
@@ -401,7 +398,7 @@
                 <input class="field" placeholder="email@example.com" type="email" name="email" id="mail-email" required>
               </p>
               <span class="button-pink-wrap">
-                <button class="mailing-button button-pink" type="button">
+                <button class="mailing-button button-pink" type="submit">
                   <span>Отправить</span>
                 </button>
               </span>
@@ -434,20 +431,22 @@
             </p>
             <p class="field-group form-delivery-phone">
               <span class="form-label"><label for="form-label-phone">Телефон</label></span>
-              <input class="field" type="text" id="form-label-phone" name="phone" placeholder="+7 800 999-00-00">
+              <input class="field" type="text" id="form-label-phone" name="phone" placeholder="+7 800 999-00-00"
+                required>
             </p>
             <p class="field-group form-delivery-adress">
               <span class="form-label form-label-icon">
-                <label for="form-label-adres">Адрес</label>
+                <label for="form-label-adress">Адрес</label>
                 <button class="info" type="button">
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
               </span>
-              <input class="field" type="text" id="form-label-adres" name="adres"
+              <input class="field" type="text" id="form-label-adress" name="adress"
                 placeholder="ул. Большая Конюшенная, 19/8">
             </p>
-            <span class="button-pink-wrap link-form-wrap"><button class="link-form button button-pink"
-                type="button"><span>Отправить</span></button></span>
+            <span class="button-pink-wrap link-form-wrap">
+              <button class="link-form button button-pink" type="submit"><span>Отправить</span></button>
+            </span>
           </form>
         </section>
       </section>
@@ -467,20 +466,20 @@
     <div class="modal-feedback modal">
       <form class="feedback-wrap" action="https://echo.htmlacademy.ru/" method="POST">
         <span class="feedback-text presents-item-title">Мы обязательно ответим вам!</span>
-        <p class="feedback-mailing ">
+        <p class="feedback-mailing">
           <label class="visually-hidden" for="name">Имя и фамилия</label>
           <input class="field" placeholder="Имя и фамилия" type="text" name="name" id="name">
         </p>
-        <p class="feedback-mailing ">
+        <p class="feedback-mailing">
           <label class="visually-hidden" for="feed-mail-email">Email</label>
           <input class="field" placeholder="email@example.com" type="email" name="email" id="feed-mail-email" required>
         </p>
-        <p class="feedback-mailing ">
+        <p class="feedback-mailing">
           <label class="visually-hidden" for="free-field">Свободное поле</label>
           <textarea class="field" placeholder="В свободной форме" rows="5" name="free-field" id="free-field"></textarea>
         </p>
         <span class="button-pink-wrap link-form-wrap"><button class="link-form button button-pink"
-            type="button"><span>Отправить</span></button></span>
+            type="submit"><span>Отправить</span></button></span>
         <button type="button" class="feedback-close modal-assortment-button"></button>
       </form>
     </div>

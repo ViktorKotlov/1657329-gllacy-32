@@ -10,6 +10,7 @@
 <body>
   <div class="page-container">
     <header class="page-header">
+      <h1 class="visually-hidden">Страница каталога</h1>
       <a class="main-logo" href="index.html">
         <img class="logo" src="images/vector/logo.svg" width="137" height="56" alt="Логотип магазина Глэйси">
       </a>
@@ -27,21 +28,21 @@
         </ul>
         <a class="phone" href="tel:+78005558628">+7 800 555-86-28</a>
         <ul class="navigation-list user-navigation reset-list">
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-user">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-user">
             <a class="navigation-link" href="#">
               <span class="main-navigation-in">
                 Вход
               </span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item navigation-item-user">
             <a class="navigation-link" href="#">
               <svg class="navigation-link-cart" aria-hidden="true" focusable="false" width="17" height="16"
                 viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +62,7 @@
         <h3 class="modal-basket-title">Корзина</h3>
         <ul class="modal-products-list">
           <li class="modal-products-item">
-            <img class="products-image" src="images/catalog/raspberries.png" width="50" height="50"
+            <img class="products-image" src="images/catalog/modal-raspberries.png" width="46" height="46"
               alt="Шарик мороженного">
             <div class="modal0text-wrap">
               <h4 class="modal-assortment-title">Малинка</h4>
@@ -72,7 +73,7 @@
             </button>
           </li>
           <li class="modal-products-item">
-            <img class="products-image" src="images/catalog/bubble-gum.png" width="50" height="50"
+            <img class="products-image" src="images/catalog/modal-bubble-gum.png" width="46" height="46"
               alt="Шарик мороженного">
             <div class="modal0text-wrap">
 
@@ -84,27 +85,25 @@
             </button>
           </li>
         </ul>
-        <div class="modal-zakaz-wrap">
-
+        <div class="modal-order-wrap">
           <span class="button-pink-wrap"><button class="button button-pink" type="button">Оформить заказ
             </button></span>
-          <span class="modal-zakaz-text modal-text">Итого: 790 ₽</span>
+          <span class="modal-order-text modal-text">Итого: 790 ₽</span>
         </div>
       </section>
     </header>
     <main class="catalog main-container">
-      <h1 class="visually-hidden">Страница каталога</h1>
       <section class="catalog-breadcrumbs">
         <h2 class="visually-hidden">Навигационная цепочка</h2>
         <ul class="breadcrumbs-list reset-list">
-          <li class="breadcrambs-item">
-            <a class="breadcrambs-link" href="index.html">Главная</a>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
-          <li class="breadcrambs-item">
-            <a class="breadcrambs-link" href="#">Каталог</a>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Каталог</a>
           </li>
-          <li class="breadcrambs-item">
-            <a class="breadcrambs-link breadcrambs-link-current">Сливочное</a>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link breadcrumbs-link-current">Сливочное</a>
           </li>
         </ul>
       </section>
@@ -144,7 +143,6 @@
                   </button>
                 </div>
               </div>
-
             </div>
           </fieldset>
           <fieldset class="catalog-form-group">
@@ -166,7 +164,7 @@
               </li>
               <li class="catalog-form-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="fatness">
+                  <input class="visually-hidden control-input" type="radio" name="fatness" disabled>
                   <span class="control-mark"></span>
                   <span class="control-label">до 30%</span>
                 </label>
@@ -178,7 +176,6 @@
                   <span class="control-label">выше 30%</span>
                 </label>
               </li>
-
             </ul>
           </fieldset>
           <fieldset class="catalog-form-group">
@@ -186,7 +183,7 @@
             <ul class="catalog-form-item-list catalog-form-wrapper-labels catalog-form-item-list-checkbox">
               <li class="catalog-form-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="chocolate" checked>
+                  <input class="visually-hidden control-input" type="checkbox" name="chocolate" disabled>
                   <span class="control-mark"></span>
                   <span class="control-label">шоколадные</span>
                 </label>
