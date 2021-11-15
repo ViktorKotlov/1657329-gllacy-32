@@ -17,7 +17,24 @@
       <nav class="main-navigation">
         <ul class="navigation-list site-navigation reset-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Каталог</a>
+            <a class="navigation-link navigation-link-catalog navigation-link-current" href="catalog.html">Каталог</a>
+            <div class="modal-navigation-catalog">
+              <span class="modal-navigation-catalog-text">Новинки</span>
+              <ul class="modal-navigation-catalog-list reset-list">
+                <li class="modal-navigation-catalog-item">
+                  <a class="modal-catalog-link" href="#">Сливочное</a>
+                </li>
+                <li class="modal-navigation-catalog-item">
+                  <a class="modal-catalog-link" href="#">Щербеты</a>
+                </li>
+                <li class="modal-navigation-catalog-item">
+                  <a class="modal-catalog-link" href="#">Фруктовый лед</a>
+                </li>
+                <li class="modal-navigation-catalog-item">
+                  <a class="modal-catalog-link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -29,68 +46,92 @@
         <a class="phone" href="tel:+78005558628">+7 800 555-86-28</a>
         <ul class="navigation-list user-navigation reset-list">
           <li class="navigation-item navigation-item-user">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link navigation-link-search" href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
             </a>
+            <div class="modal-search modal">
+              <label class="visually-hidden" for="search-to-site">Search</label>
+              <input class="field" placeholder="Поиск по сайту" type="search" name="search" id="search-to-site">
+            </div>
           </li>
           <li class="navigation-item navigation-item-user">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link navigation-link-in" href="#">
               <span class="main-navigation-in">
                 Вход
               </span>
             </a>
+            <div class="modal-in-form modal">
+              <form class="in-form-wrap" action="https://echo.htmlacademy.ru/" method="POST">
+                <span class="modal-in-text presents-item-title">Личный кабинет</span>
+                <p class="modal-in-mailing ">
+                  <label class="visually-hidden" for="mailing-email">Email</label>
+                  <input class="field" placeholder="email@example.com" type="email" name="email" id="mailing-email"
+                    required>
+                </p>
+                <p class="modal-in-mailing">
+                  <label class="visually-hidden" for="password">Password</label>
+                  <input class="field" placeholder="" type="password" name="password" id="password" required>
+                </p>
+                <span class="button-pink-wrap link-form-wrap"><button class="link-form button button-pink"
+                    type="submit"><span>Войти</span></button></span>
+              </form>
+              <div class="in-form-hints">
+                <a class="hints" href="#"><span class="hints-text">Забыли пароль?</span></a>
+                <a class="hints" href="#"><span class="hints-text">Регистрация</span></a>
+              </div>
+            </div>
           </li>
           <li class="navigation-item navigation-item-user">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link navigation-link-basket" href="#">
               <svg class="navigation-link-cart" aria-hidden="true" focusable="false" width="17" height="16"
                 viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M0.645874 1.15641C0.645874 0.788223 0.944351 0.489746 1.31254 0.489746H3.91999C4.23774 0.489746 4.51133 0.714003 4.57369 1.02557L5.11879 3.74906H15.6535C15.8522 3.74906 16.0405 3.83767 16.1672 3.99076C16.2938 4.14384 16.3456 4.34544 16.3084 4.54061L15.2654 10.0097L15.2644 10.0147L15.2644 10.0147C15.1743 10.4683 14.9276 10.8757 14.5673 11.1657C14.209 11.4542 13.761 11.6082 13.3011 11.601H6.97639C6.51652 11.6082 6.06854 11.4542 5.71016 11.1657C5.35008 10.8759 5.10338 10.4686 5.0132 10.0153L5.01308 10.0147L3.92432 4.57495C3.91985 4.5567 3.91612 4.53816 3.91319 4.51936L3.37353 1.82308H1.31254C0.944351 1.82308 0.645874 1.5246 0.645874 1.15641ZM6.5285 12.8757C5.80055 12.8757 5.21043 13.4658 5.21043 14.1938C5.21043 14.9217 5.80055 15.5118 6.5285 15.5118C7.25644 15.5118 7.84656 14.9217 7.84656 14.1938C7.84656 13.4658 7.25644 12.8757 6.5285 12.8757ZM13.6985 12.8757C12.9705 12.8757 12.3804 13.4658 12.3804 14.1938C12.3804 14.9217 12.9705 15.5118 13.6985 15.5118C14.4264 15.5118 15.0166 14.9217 15.0166 14.1938C15.0166 13.4658 14.4264 12.8757 13.6985 12.8757Z"
                   fill="#2D3440" />
               </svg>
-
               <span class="main-navigation-basket">
                 2 товара
               </span>
             </a>
+            <section class="modal-basket">
+              <h3 class="modal-basket-title">Корзина</h3>
+              <ul class="modal-products-list">
+                <li class="modal-products-item">
+                  <img class="products-image" src="images/catalog/modal-raspberries.png" width="46" height="46"
+                    alt="Шарик мороженного">
+                  <div class="modal0text-wrap">
+                    <h4 class="modal-assortment-title">Малинка</h4>
+                    <span class="modal-product-desc">1 кг х 310 ₽</span>
+                  </div>
+                  <b class="modal-text">310 ₽</b>
+                  <button class="modal-assortment-button" type="button">
+                    <span class="visually-hidden">Удалить элемент</span>
+                  </button>
+                </li>
+                <li class="modal-products-item">
+                  <img class="products-image" src="images/catalog/modal-bubble-gum.png" width="46" height="46"
+                    alt="Шарик мороженного">
+                  <div class="modal0text-wrap">
+                    <h4 class="modal-assortment-title">Бабл-гам</h4>
+                    <span class="modal-product-desc">1,5 кг х 320 ₽</span>
+                  </div>
+                  <b class="modal-text">480 ₽</b>
+                  <button class="modal-assortment-button" type="button">
+                    <span class="visually-hidden">Удалить элемент</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="modal-order-wrap">
+                <span class="button-pink-wrap"><a class="button button-pink" href="#">Оформить заказ
+                  </a></span>
+                <span class="modal-order-text modal-text">Итого: 790 ₽</span>
+              </div>
+            </section>
           </li>
         </ul>
       </nav>
-      <section class="modal-basket">
-        <h3 class="modal-basket-title">Корзина</h3>
-        <ul class="modal-products-list">
-          <li class="modal-products-item">
-            <img class="products-image" src="images/catalog/modal-raspberries.png" width="46" height="46"
-              alt="Шарик мороженного">
-            <div class="modal0text-wrap">
-              <h4 class="modal-assortment-title">Малинка</h4>
-              <span class="modal-product-desc">1 кг х 310 ₽</span>
-            </div>
-            <b class="modal-text">310 ₽</b>
-            <button class="modal-assortment-button" type="button">
-            </button>
-          </li>
-          <li class="modal-products-item">
-            <img class="products-image" src="images/catalog/modal-bubble-gum.png" width="46" height="46"
-              alt="Шарик мороженного">
-            <div class="modal0text-wrap">
-
-              <h4 class="modal-assortment-title">Бабл-гам</h4>
-              <span class="modal-product-desc">1,5 кг х 320 ₽</span>
-            </div>
-            <b class="modal-text">480 ₽</b>
-            <button class="modal-assortment-button" type="button">
-            </button>
-          </li>
-        </ul>
-        <div class="modal-order-wrap">
-          <span class="button-pink-wrap"><button class="button button-pink" type="button">Оформить заказ
-            </button></span>
-          <span class="modal-order-text modal-text">Итого: 790 ₽</span>
-        </div>
-      </section>
     </header>
     <main class="catalog main-container">
       <section class="catalog-breadcrumbs">
@@ -164,7 +205,7 @@
               </li>
               <li class="catalog-form-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="fatness" disabled>
+                  <input class="visually-hidden control-input" type="radio" name="fatness">
                   <span class="control-mark"></span>
                   <span class="control-label">до 30%</span>
                 </label>
@@ -183,7 +224,7 @@
             <ul class="catalog-form-item-list catalog-form-wrapper-labels catalog-form-item-list-checkbox">
               <li class="catalog-form-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="chocolate" disabled>
+                  <input class="visually-hidden control-input" type="checkbox" name="chocolate">
                   <span class="control-mark"></span>
                   <span class="control-label">шоколадные</span>
                 </label>
@@ -233,13 +274,12 @@
               <p>Сливочное мороженое с малиновым джемом</p>
               <b class="text-norm">310 ₽/кг</b>
               <button class="assortment-button" type="button">
-                <svg aria-hidden="true" focusable="false" width="32" height="32" fill="none"
+                <svg aria-hidden="true" focusable="false" width="17" height="16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 16C0 7.1634 7.1634 0 16 0s16 7.1634 16 16-7.1634 16-16 16S0 24.8366 0 16z"
-                    fill="#FF2F64" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.1667 9.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.656.656 0 0 0 .0106.0531l.9674 4.8334.0001.0005a1.8255 1.8255 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4696l.001-.005.9271-4.8615a.6668.6668 0 0 0-.6549-.7915h-9.3035l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H9.1667zm4.5243 8.2944l-.8134-4.0639h8.2308l-.7756 4.0669a.4922.4922 0 0 1-.4918.3942v-.0001H14.1961v-.0001l-.0127.0002a.4926.4926 0 0 1-.4922-.3962l-.0002-.001zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.6879 0 1.2457.5578 1.2457 1.2457 0 .688-.5578 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457z"
-                    fill="#FCFCFC" /></svg>
+                    d="M1.313.49a.667.667 0 0 0 0 1.333h2.06l.54 2.696a.662.662 0 0 0 .011.056l1.09 5.44a1.97 1.97 0 0 0 1.962 1.586h6.325a1.97 1.97 0 0 0 1.963-1.586l.001-.005 1.043-5.47a.667.667 0 0 0-.655-.791H5.12l-.545-2.724A.667.667 0 0 0 3.92.49H1.313zM6.32 9.754l-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.958a.637.637 0 0 1-.637-.512v-.001zm-1.11 4.44a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0zm7.17 0a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0z"
+                    fill="#2D3440" /></svg>
+                <span class="visually-hidden">Положить в корзину</span>
               </button>
             </div>
           </li>
@@ -251,13 +291,12 @@
               <p>Фисташковый пломбир с кусочками шоколада</p>
               <b class="text-norm">340 ₽/кг</b>
               <button class="assortment-button" type="button">
-                <svg aria-hidden="true" focusable="false" width="32" height="32" fill="none"
+                <svg aria-hidden="true" focusable="false" width="17" height="16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 16C0 7.1634 7.1634 0 16 0s16 7.1634 16 16-7.1634 16-16 16S0 24.8366 0 16z"
-                    fill="#FF2F64" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.1667 9.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.656.656 0 0 0 .0106.0531l.9674 4.8334.0001.0005a1.8255 1.8255 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4696l.001-.005.9271-4.8615a.6668.6668 0 0 0-.6549-.7915h-9.3035l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H9.1667zm4.5243 8.2944l-.8134-4.0639h8.2308l-.7756 4.0669a.4922.4922 0 0 1-.4918.3942v-.0001H14.1961v-.0001l-.0127.0002a.4926.4926 0 0 1-.4922-.3962l-.0002-.001zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.6879 0 1.2457.5578 1.2457 1.2457 0 .688-.5578 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457z"
-                    fill="#FCFCFC" /></svg>
+                    d="M1.313.49a.667.667 0 0 0 0 1.333h2.06l.54 2.696a.662.662 0 0 0 .011.056l1.09 5.44a1.97 1.97 0 0 0 1.962 1.586h6.325a1.97 1.97 0 0 0 1.963-1.586l.001-.005 1.043-5.47a.667.667 0 0 0-.655-.791H5.12l-.545-2.724A.667.667 0 0 0 3.92.49H1.313zM6.32 9.754l-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.958a.637.637 0 0 1-.637-.512v-.001zm-1.11 4.44a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0zm7.17 0a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0z"
+                    fill="#2D3440" /></svg>
+                <span class="visually-hidden">Положить в корзину</span>
               </button>
             </div>
           </li>
@@ -269,13 +308,12 @@
               <p>Крем-брюле <br> с черничным джемом</p>
               <b class="text-norm">330 ₽/кг</b>
               <button class="assortment-button" type="button">
-                <svg aria-hidden="true" focusable="false" width="32" height="32" fill="none"
+                <svg aria-hidden="true" focusable="false" width="17" height="16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 16C0 7.1634 7.1634 0 16 0s16 7.1634 16 16-7.1634 16-16 16S0 24.8366 0 16z"
-                    fill="#FF2F64" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.1667 9.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.656.656 0 0 0 .0106.0531l.9674 4.8334.0001.0005a1.8255 1.8255 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4696l.001-.005.9271-4.8615a.6668.6668 0 0 0-.6549-.7915h-9.3035l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H9.1667zm4.5243 8.2944l-.8134-4.0639h8.2308l-.7756 4.0669a.4922.4922 0 0 1-.4918.3942v-.0001H14.1961v-.0001l-.0127.0002a.4926.4926 0 0 1-.4922-.3962l-.0002-.001zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.6879 0 1.2457.5578 1.2457 1.2457 0 .688-.5578 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457z"
-                    fill="#FCFCFC" /></svg>
+                    d="M1.313.49a.667.667 0 0 0 0 1.333h2.06l.54 2.696a.662.662 0 0 0 .011.056l1.09 5.44a1.97 1.97 0 0 0 1.962 1.586h6.325a1.97 1.97 0 0 0 1.963-1.586l.001-.005 1.043-5.47a.667.667 0 0 0-.655-.791H5.12l-.545-2.724A.667.667 0 0 0 3.92.49H1.313zM6.32 9.754l-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.958a.637.637 0 0 1-.637-.512v-.001zm-1.11 4.44a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0zm7.17 0a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0z"
+                    fill="#2D3440" /></svg>
+                <span class="visually-hidden">Положить в корзину</span>
               </button>
             </div>
           </li>
@@ -287,13 +325,12 @@
               <p>Ванильный пломбир <br> со сладкой посыпкой</p>
               <b class="text-norm">320 ₽/кг</b>
               <button class="assortment-button" type="button">
-                <svg aria-hidden="true" focusable="false" width="32" height="32" fill="none"
+                <svg aria-hidden="true" focusable="false" width="17" height="16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 16C0 7.1634 7.1634 0 16 0s16 7.1634 16 16-7.1634 16-16 16S0 24.8366 0 16z"
-                    fill="#FF2F64" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.1667 9.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.656.656 0 0 0 .0106.0531l.9674 4.8334.0001.0005a1.8255 1.8255 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4696l.001-.005.9271-4.8615a.6668.6668 0 0 0-.6549-.7915h-9.3035l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H9.1667zm4.5243 8.2944l-.8134-4.0639h8.2308l-.7756 4.0669a.4922.4922 0 0 1-.4918.3942v-.0001H14.1961v-.0001l-.0127.0002a.4926.4926 0 0 1-.4922-.3962l-.0002-.001zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.6879 0 1.2457.5578 1.2457 1.2457 0 .688-.5578 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457z"
-                    fill="#FCFCFC" /></svg>
+                    d="M1.313.49a.667.667 0 0 0 0 1.333h2.06l.54 2.696a.662.662 0 0 0 .011.056l1.09 5.44a1.97 1.97 0 0 0 1.962 1.586h6.325a1.97 1.97 0 0 0 1.963-1.586l.001-.005 1.043-5.47a.667.667 0 0 0-.655-.791H5.12l-.545-2.724A.667.667 0 0 0 3.92.49H1.313zM6.32 9.754l-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.958a.637.637 0 0 1-.637-.512v-.001zm-1.11 4.44a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0zm7.17 0a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0z"
+                    fill="#2D3440" /></svg>
+                <span class="visually-hidden">Положить в корзину</span>
               </button>
             </div>
           </li>
@@ -305,13 +342,12 @@
               <p>Сливочное мороженое с ежевичным джемом</p>
               <b class="text-norm">330 ₽/кг</b>
               <button class="assortment-button" type="button">
-                <svg aria-hidden="true" focusable="false" width="32" height="32" fill="none"
+                <svg aria-hidden="true" focusable="false" width="17" height="16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 16C0 7.1634 7.1634 0 16 0s16 7.1634 16 16-7.1634 16-16 16S0 24.8366 0 16z"
-                    fill="#FF2F64" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.1667 9.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.656.656 0 0 0 .0106.0531l.9674 4.8334.0001.0005a1.8255 1.8255 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4696l.001-.005.9271-4.8615a.6668.6668 0 0 0-.6549-.7915h-9.3035l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H9.1667zm4.5243 8.2944l-.8134-4.0639h8.2308l-.7756 4.0669a.4922.4922 0 0 1-.4918.3942v-.0001H14.1961v-.0001l-.0127.0002a.4926.4926 0 0 1-.4922-.3962l-.0002-.001zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.6879 0 1.2457.5578 1.2457 1.2457 0 .688-.5578 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457z"
-                    fill="#FCFCFC" /></svg>
+                    d="M1.313.49a.667.667 0 0 0 0 1.333h2.06l.54 2.696a.662.662 0 0 0 .011.056l1.09 5.44a1.97 1.97 0 0 0 1.962 1.586h6.325a1.97 1.97 0 0 0 1.963-1.586l.001-.005 1.043-5.47a.667.667 0 0 0-.655-.791H5.12l-.545-2.724A.667.667 0 0 0 3.92.49H1.313zM6.32 9.754l-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.958a.637.637 0 0 1-.637-.512v-.001zm-1.11 4.44a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0zm7.17 0a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0z"
+                    fill="#2D3440" /></svg>
+                <span class="visually-hidden">Положить в корзину</span>
               </button>
             </div>
           </li>
@@ -324,13 +360,12 @@
                 с банановым вкусом</p>
               <b class="text-norm">340 ₽/кг</b>
               <button class="assortment-button" type="button">
-                <svg aria-hidden="true" focusable="false" width="32" height="32" fill="none"
+                <svg aria-hidden="true" focusable="false" width="17" height="16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 16C0 7.1634 7.1634 0 16 0s16 7.1634 16 16-7.1634 16-16 16S0 24.8366 0 16z"
-                    fill="#FF2F64" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.1667 9.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.656.656 0 0 0 .0106.0531l.9674 4.8334.0001.0005a1.8255 1.8255 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4696l.001-.005.9271-4.8615a.6668.6668 0 0 0-.6549-.7915h-9.3035l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H9.1667zm4.5243 8.2944l-.8134-4.0639h8.2308l-.7756 4.0669a.4922.4922 0 0 1-.4918.3942v-.0001H14.1961v-.0001l-.0127.0002a.4926.4926 0 0 1-.4922-.3962l-.0002-.001zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.6879 0 1.2457.5578 1.2457 1.2457 0 .688-.5578 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457z"
-                    fill="#FCFCFC" /></svg>
+                    d="M1.313.49a.667.667 0 0 0 0 1.333h2.06l.54 2.696a.662.662 0 0 0 .011.056l1.09 5.44a1.97 1.97 0 0 0 1.962 1.586h6.325a1.97 1.97 0 0 0 1.963-1.586l.001-.005 1.043-5.47a.667.667 0 0 0-.655-.791H5.12l-.545-2.724A.667.667 0 0 0 3.92.49H1.313zM6.32 9.754l-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.958a.637.637 0 0 1-.637-.512v-.001zm-1.11 4.44a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0zm7.17 0a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0z"
+                    fill="#2D3440" /></svg>
+                <span class="visually-hidden">Положить в корзину</span>
               </button>
             </div>
           </li>
@@ -342,13 +377,12 @@
               <p>Классический шоколадный пломбир</p>
               <b class="text-norm">270 ₽/кг</b>
               <button class="assortment-button" type="button">
-                <svg aria-hidden="true" focusable="false" width="32" height="32" fill="none"
+                <svg aria-hidden="true" focusable="false" width="17" height="16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 16C0 7.1634 7.1634 0 16 0s16 7.1634 16 16-7.1634 16-16 16S0 24.8366 0 16z"
-                    fill="#FF2F64" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.1667 9.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.656.656 0 0 0 .0106.0531l.9674 4.8334.0001.0005a1.8255 1.8255 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4696l.001-.005.9271-4.8615a.6668.6668 0 0 0-.6549-.7915h-9.3035l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H9.1667zm4.5243 8.2944l-.8134-4.0639h8.2308l-.7756 4.0669a.4922.4922 0 0 1-.4918.3942v-.0001H14.1961v-.0001l-.0127.0002a.4926.4926 0 0 1-.4922-.3962l-.0002-.001zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.6879 0 1.2457.5578 1.2457 1.2457 0 .688-.5578 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457z"
-                    fill="#FCFCFC" /></svg>
+                    d="M1.313.49a.667.667 0 0 0 0 1.333h2.06l.54 2.696a.662.662 0 0 0 .011.056l1.09 5.44a1.97 1.97 0 0 0 1.962 1.586h6.325a1.97 1.97 0 0 0 1.963-1.586l.001-.005 1.043-5.47a.667.667 0 0 0-.655-.791H5.12l-.545-2.724A.667.667 0 0 0 3.92.49H1.313zM6.32 9.754l-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.958a.637.637 0 0 1-.637-.512v-.001zm-1.11 4.44a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0zm7.17 0a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0z"
+                    fill="#2D3440" /></svg>
+                <span class="visually-hidden">Положить в корзину</span>
               </button>
             </div>
           </li>
@@ -360,13 +394,12 @@
               <p>Сливочный пломбир<br> с клубничным вкусом</p>
               <b class="text-norm">300 ₽/кг</b>
               <button class="assortment-button" type="button">
-                <svg aria-hidden="true" focusable="false" width="32" height="32" fill="none"
+                <svg aria-hidden="true" focusable="false" width="17" height="16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 16C0 7.1634 7.1634 0 16 0s16 7.1634 16 16-7.1634 16-16 16S0 24.8366 0 16z"
-                    fill="#FF2F64" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.1667 9.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.656.656 0 0 0 .0106.0531l.9674 4.8334.0001.0005a1.8255 1.8255 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4696l.001-.005.9271-4.8615a.6668.6668 0 0 0-.6549-.7915h-9.3035l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H9.1667zm4.5243 8.2944l-.8134-4.0639h8.2308l-.7756 4.0669a.4922.4922 0 0 1-.4918.3942v-.0001H14.1961v-.0001l-.0127.0002a.4926.4926 0 0 1-.4922-.3962l-.0002-.001zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.6879 0 1.2457.5578 1.2457 1.2457 0 .688-.5578 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457z"
-                    fill="#FCFCFC" /></svg>
+                    d="M1.313.49a.667.667 0 0 0 0 1.333h2.06l.54 2.696a.662.662 0 0 0 .011.056l1.09 5.44a1.97 1.97 0 0 0 1.962 1.586h6.325a1.97 1.97 0 0 0 1.963-1.586l.001-.005 1.043-5.47a.667.667 0 0 0-.655-.791H5.12l-.545-2.724A.667.667 0 0 0 3.92.49H1.313zM6.32 9.754l-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.958a.637.637 0 0 1-.637-.512v-.001zm-1.11 4.44a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0zm7.17 0a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0z"
+                    fill="#2D3440" /></svg>
+                <span class="visually-hidden">Положить в корзину</span>
               </button>
             </div>
           </li>
@@ -378,13 +411,12 @@
               <p>Освежающий лимонный сорбет</p>
               <b class="text-norm">310 ₽/кг</b>
               <button class="assortment-button" type="button">
-                <svg aria-hidden="true" focusable="false" width="32" height="32" fill="none"
+                <svg aria-hidden="true" focusable="false" width="17" height="16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 16C0 7.1634 7.1634 0 16 0s16 7.1634 16 16-7.1634 16-16 16S0 24.8366 0 16z"
-                    fill="#FF2F64" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.1667 9.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.656.656 0 0 0 .0106.0531l.9674 4.8334.0001.0005a1.8255 1.8255 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4696l.001-.005.9271-4.8615a.6668.6668 0 0 0-.6549-.7915h-9.3035l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H9.1667zm4.5243 8.2944l-.8134-4.0639h8.2308l-.7756 4.0669a.4922.4922 0 0 1-.4918.3942v-.0001H14.1961v-.0001l-.0127.0002a.4926.4926 0 0 1-.4922-.3962l-.0002-.001zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.6879 0 1.2457.5578 1.2457 1.2457 0 .688-.5578 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457z"
-                    fill="#FCFCFC" /></svg>
+                    d="M1.313.49a.667.667 0 0 0 0 1.333h2.06l.54 2.696a.662.662 0 0 0 .011.056l1.09 5.44a1.97 1.97 0 0 0 1.962 1.586h6.325a1.97 1.97 0 0 0 1.963-1.586l.001-.005 1.043-5.47a.667.667 0 0 0-.655-.791H5.12l-.545-2.724A.667.667 0 0 0 3.92.49H1.313zM6.32 9.754l-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.958a.637.637 0 0 1-.637-.512v-.001zm-1.11 4.44a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0zm7.17 0a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0z"
+                    fill="#2D3440" /></svg>
+                <span class="visually-hidden">Положить в корзину</span>
               </button>
             </div>
           </li>
@@ -396,13 +428,12 @@
               <p>Сливочный пломбир<br> с ментоловым сиропом</p>
               <b class="text-norm">320 ₽/кг</b>
               <button class="assortment-button" type="button">
-                <svg aria-hidden="true" focusable="false" width="32" height="32" fill="none"
+                <svg aria-hidden="true" focusable="false" width="17" height="16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 16C0 7.1634 7.1634 0 16 0s16 7.1634 16 16-7.1634 16-16 16S0 24.8366 0 16z"
-                    fill="#FF2F64" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.1667 9.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.656.656 0 0 0 .0106.0531l.9674 4.8334.0001.0005a1.8255 1.8255 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4696l.001-.005.9271-4.8615a.6668.6668 0 0 0-.6549-.7915h-9.3035l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H9.1667zm4.5243 8.2944l-.8134-4.0639h8.2308l-.7756 4.0669a.4922.4922 0 0 1-.4918.3942v-.0001H14.1961v-.0001l-.0127.0002a.4926.4926 0 0 1-.4922-.3962l-.0002-.001zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.6879 0 1.2457.5578 1.2457 1.2457 0 .688-.5578 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457z"
-                    fill="#FCFCFC" /></svg>
+                    d="M1.313.49a.667.667 0 0 0 0 1.333h2.06l.54 2.696a.662.662 0 0 0 .011.056l1.09 5.44a1.97 1.97 0 0 0 1.962 1.586h6.325a1.97 1.97 0 0 0 1.963-1.586l.001-.005 1.043-5.47a.667.667 0 0 0-.655-.791H5.12l-.545-2.724A.667.667 0 0 0 3.92.49H1.313zM6.32 9.754l-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.958a.637.637 0 0 1-.637-.512v-.001zm-1.11 4.44a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0zm7.17 0a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0z"
+                    fill="#2D3440" /></svg>
+                <span class="visually-hidden">Положить в корзину</span>
               </button>
             </div>
           </li>
@@ -414,13 +445,12 @@
               <p>Фисташковый пломбир с шоколадным сиропом</p>
               <b class="text-norm">360 ₽/кг</b>
               <button class="assortment-button" type="button">
-                <svg aria-hidden="true" focusable="false" width="32" height="32" fill="none"
+                <svg aria-hidden="true" focusable="false" width="17" height="16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 16C0 7.1634 7.1634 0 16 0s16 7.1634 16 16-7.1634 16-16 16S0 24.8366 0 16z"
-                    fill="#FF2F64" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.1667 9.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.656.656 0 0 0 .0106.0531l.9674 4.8334.0001.0005a1.8255 1.8255 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4696l.001-.005.9271-4.8615a.6668.6668 0 0 0-.6549-.7915h-9.3035l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H9.1667zm4.5243 8.2944l-.8134-4.0639h8.2308l-.7756 4.0669a.4922.4922 0 0 1-.4918.3942v-.0001H14.1961v-.0001l-.0127.0002a.4926.4926 0 0 1-.4922-.3962l-.0002-.001zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.6879 0 1.2457.5578 1.2457 1.2457 0 .688-.5578 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457z"
-                    fill="#FCFCFC" /></svg>
+                    d="M1.313.49a.667.667 0 0 0 0 1.333h2.06l.54 2.696a.662.662 0 0 0 .011.056l1.09 5.44a1.97 1.97 0 0 0 1.962 1.586h6.325a1.97 1.97 0 0 0 1.963-1.586l.001-.005 1.043-5.47a.667.667 0 0 0-.655-.791H5.12l-.545-2.724A.667.667 0 0 0 3.92.49H1.313zM6.32 9.754l-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.958a.637.637 0 0 1-.637-.512v-.001zm-1.11 4.44a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0zm7.17 0a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0z"
+                    fill="#2D3440" /></svg>
+                <span class="visually-hidden">Положить в корзину</span>
               </button>
             </div>
           </li>
@@ -432,13 +462,12 @@
               <p>Классическое<br> крем-брюле</p>
               <b class="text-norm">280 ₽/кг</b>
               <button class="assortment-button" type="button">
-                <svg aria-hidden="true" focusable="false" width="32" height="32" fill="none"
+                <svg aria-hidden="true" focusable="false" width="17" height="16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 16C0 7.1634 7.1634 0 16 0s16 7.1634 16 16-7.1634 16-16 16S0 24.8366 0 16z"
-                    fill="#FF2F64" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M9.1667 9.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.656.656 0 0 0 .0106.0531l.9674 4.8334.0001.0005a1.8255 1.8255 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4696l.001-.005.9271-4.8615a.6668.6668 0 0 0-.6549-.7915h-9.3035l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H9.1667zm4.5243 8.2944l-.8134-4.0639h8.2308l-.7756 4.0669a.4922.4922 0 0 1-.4918.3942v-.0001H14.1961v-.0001l-.0127.0002a.4926.4926 0 0 1-.4922-.3962l-.0002-.001zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.6879 0 1.2457.5578 1.2457 1.2457 0 .688-.5578 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457z"
-                    fill="#FCFCFC" /></svg>
+                    d="M1.313.49a.667.667 0 0 0 0 1.333h2.06l.54 2.696a.662.662 0 0 0 .011.056l1.09 5.44a1.97 1.97 0 0 0 1.962 1.586h6.325a1.97 1.97 0 0 0 1.963-1.586l.001-.005 1.043-5.47a.667.667 0 0 0-.655-.791H5.12l-.545-2.724A.667.667 0 0 0 3.92.49H1.313zM6.32 9.754l-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.958a.637.637 0 0 1-.637-.512v-.001zm-1.11 4.44a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0zm7.17 0a1.318 1.318 0 1 1 2.636 0 1.318 1.318 0 0 1-2.637 0z"
+                    fill="#2D3440" /></svg>
+                <span class="visually-hidden">Положить в корзину</span>
               </button>
             </div>
           </li>
@@ -542,9 +571,10 @@
       </section>
       <section class="copyright">
         <h3 class="visually-hidden">Копирайт</h3>
-        <a class="copyright-link" href="#">
+        <a class="copyright-link" href="https://htmlacademy.ru/">
           <img class="copyright-image" src="images/vector/logo_htmlacademy.svg" width="93" height="27"
             alt=".html academy">
+          <span class="visually-hidden">Сайт HTML Academy</span>
         </a>
         <p>Сделано в <a href="#">.html academy</a> © 2021</p>
       </section>
