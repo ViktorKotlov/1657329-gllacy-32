@@ -1109,7 +1109,7 @@ input::placeholder {
   position: relative;
   padding: 64px;
   background-color: wheat;
-  background-image: url("..//images/background/obr-sv.jpg");
+  background-image: url("../images/background/contacts-img.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   box-sizing: border-box;
