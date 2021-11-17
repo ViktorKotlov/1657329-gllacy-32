@@ -1267,7 +1267,7 @@ input::placeholder {
 
 .button-pink-wrap:focus, .button-pink-wrap:active {
   background: #2D3440;
-  padding: 2px;
+  padding: 4px;
 }
 
 .button-pink-wrap:disabled {
